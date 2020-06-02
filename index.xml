@@ -6,7 +6,7 @@
     <description>Recent content on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2020 10:48:06 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 12:44:38 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,15 @@
       
       <guid>http://localhost:1313/about/</guid>
       <description>博客是使用hugo生成的静态网页，并部署在Github Pages上 博客主要用来记录与分享学习、生活 博主 95后 爱好做饭、编码 祝每一位访客朋友健</description>
+    </item>
+    
+    <item>
+      <title>我正在使用的chrome插件</title>
+      <link>http://localhost:1313/post/chrome_extension/</link>
+      <pubDate>Tue, 02 Jun 2020 12:44:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/chrome_extension/</guid>
+      <description>Proxy SwitchyOmega Dmooji 弹幕君 - YouTube弹幕助手 Tampermonkey Stylus AdBlock — 最佳广告拦截工具 User-Agent Switcher for Chrome 哔哩哔哩助手：bilibili.com 综合辅助扩展 CaretTab - 新式可以显示时间和</description>
     </item>
     
     <item>
@@ -71,7 +80,7 @@
       <pubDate>Tue, 02 Jun 2020 01:39:29 +0800</pubDate>
       
       <guid>http://localhost:1313/post/m.2_ssd/</guid>
-      <description></description>
+      <description>尺寸 M.2标准允许模块宽度为12、16、22和30mm，长度为16、26、30、38、42、60、80和110mm。市售的 M.2 模块主要为22m</description>
     </item>
     
     <item>
