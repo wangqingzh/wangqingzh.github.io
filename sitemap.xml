@@ -107,6 +107,13 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/tags/college/</loc>
+    <lastmod>2020-06-02T02:17:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/post/college_graduation_project/</loc>
     <lastmod>2020-06-02T02:17:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
