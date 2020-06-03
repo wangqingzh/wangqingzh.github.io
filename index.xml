@@ -6,10 +6,19 @@
     <description>Recent content on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Jun 2020 02:09:38 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 02:52:55 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>做菜漫谈</title>
+      <link>http://localhost:1313/post/cook_rambling/</link>
+      <pubDate>Thu, 04 Jun 2020 02:38:59 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/cook_rambling/</guid>
+      <description>2020-6-4 番茄炖牛肉 https://www.youtube.com/watch?v=c7WdU8vyTTE 看了王刚老师的视频，吼，信心满满。 等到做出来时，属实拉跨，被嫌弃。 实操时，确实出了一些问题： 牛肉在高压锅炖了25分钟，噔噔（其</description>
+    </item>
     
     <item>
       <title>关于</title>
@@ -18,6 +27,15 @@
       
       <guid>http://localhost:1313/about/</guid>
       <description>博客是使用hugo生成的静态网页，并部署在Github Pages上 博客主要用来记录与分享学习、生活 博主 95后 爱好做饭、编码 祝每一位访客朋友健</description>
+    </item>
+    
+    <item>
+      <title>美食博主</title>
+      <link>http://localhost:1313/post/food_blogger/</link>
+      <pubDate>Thu, 04 Jun 2020 02:52:55 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/food_blogger/</guid>
+      <description>美食作家王刚 https://www.youtube.com/channel/UCg0m_Ah8P_MQbnn77-vYnYw 硬核的男人，宽油入教。 厨师长农国栋 https://space.bilibili.com/415479453/ 粤菜大佬，感觉偏向炖。 吃货雪茸堂 https://space.bilibili.com/474441355/ 非常带劲，快手上还有一个【藏地九哥】一样带劲。 野食小哥 https://space.bilibili.com/30643878/</description>
     </item>
     
     <item>
@@ -89,7 +107,7 @@
       <pubDate>Tue, 02 Jun 2020 01:50:29 +0800</pubDate>
       
       <guid>http://localhost:1313/post/study_source/</guid>
-      <description>社区 Java知音 牛客 博客 芋道源码 GitHub JavaGuide coolsnowwolf 微信公众号 帅地学编程 Java3y JAVA乐园 labuladong 三太子敖丙 刷题 leetcode 牛客 学习网站 航歌 B站 网易云课堂 慕课网 网易公开课 IT</description>
+      <description>社区 Java知音 牛客 博客 芋道源码 武培轩 GitHub JavaGuide coolsnowwolf 微信公众号 帅地学编程 Java3y JAVA乐园 labuladong 三太子敖丙 五分钟学算法 刷题 leetcode 牛客 学习网站 航歌 B站 网易云课堂 慕</description>
     </item>
     
     <item>
