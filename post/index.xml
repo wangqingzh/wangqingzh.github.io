@@ -6,10 +6,28 @@
     <description>Recent content in Posts on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2020 12:44:38 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 02:09:38 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>中文文案排版指北</title>
+      <link>http://localhost:1313/post/chinese_copywriting_guidelines/</link>
+      <pubDate>Thu, 04 Jun 2020 02:09:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/chinese_copywriting_guidelines/</guid>
+      <description>本篇文章系引用，原项目 chinese-copywriting-guidelines 中文文案排版指北 统一中文文案、排版的相关用法，降低团队成员之间的沟通成本，增强网站气质。 其他语言： 英语 繁体中文 简体中</description>
+    </item>
+    
+    <item>
+      <title>String StringBuffer StringBuilder</title>
+      <link>http://localhost:1313/post/string_stringbuffer_stringbuilder/</link>
+      <pubDate>Thu, 04 Jun 2020 01:25:01 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/string_stringbuffer_stringbuilder/</guid>
+      <description>继承关系 区别 String 长度不可变 String 1 2 public final class String implements java.io.Serializable, Comparable&amp;lt;String&amp;gt;, CharSequence, Constable, ConstantDesc { private final byte[] value; 浅析Java中的final关键字 StringBuilder 1 public final class StringBuilder extends AbstractStringBuilder implements java.io.Serializable, Comparable&amp;lt;StringBuilder&amp;gt;, CharSequence StringBuffer 1 public final class StringBuffer extends AbstractStringBuilder implements java.io.Serializable, Comparable&amp;lt;StringBuffer&amp;gt;, CharSequence</description>
+    </item>
     
     <item>
       <title>我正在使用的chrome插件</title>

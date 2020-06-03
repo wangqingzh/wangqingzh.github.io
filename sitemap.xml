@@ -10,41 +10,69 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2020-06-02T12:44:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/chrome/</loc>
-    <lastmod>2020-06-02T12:44:38+08:00</lastmod>
+    <lastmod>2020-06-04T02:09:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-06-02T12:44:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2020-06-02T12:44:38+08:00</lastmod>
+    <lastmod>2020-06-04T02:09:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/tips/</loc>
-    <lastmod>2020-06-02T12:44:38+08:00</lastmod>
+    <lastmod>2020-06-04T02:09:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2020-06-04T02:09:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/chinese_copywriting_guidelines/</loc>
+    <lastmod>2020-06-04T02:09:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/java/</loc>
+    <lastmod>2020-06-04T01:25:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/jdk/</loc>
+    <lastmod>2020-06-04T01:25:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/string_stringbuffer_stringbuilder/</loc>
+    <lastmod>2020-06-04T01:25:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-06-04T01:25:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/chrome/</loc>
     <lastmod>2020-06-02T12:44:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
