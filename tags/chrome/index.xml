@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>我正在使用的chrome插件</title>
-      <link>http://localhost:1313/post/chrome_extension/</link>
+      <title>Chrome</title>
+      <link>http://localhost:1313/post/chrome/</link>
       <pubDate>Tue, 02 Jun 2020 12:44:38 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/chrome_extension/</guid>
-      <description>Proxy SwitchyOmega Dmooji 弹幕君 - YouTube弹幕助手 Tampermonkey Stylus AdBlock — 最佳广告拦截工具 User-Agent Switcher for Chrome 哔哩哔哩助手：bilibili.com 综合辅助扩展 CaretTab - 新式可以显示时间和</description>
+      <guid>http://localhost:1313/post/chrome/</guid>
+      <description>插件 Proxy SwitchyOmega Dmooji 弹幕君 - YouTube弹幕助手 Tampermonkey Stylus AdBlock — 最佳广告拦截工具 User-Agent Switcher for Chrome 哔哩哔哩助手：bilibili.com 综合辅助扩展 CaretTab - 新式可以显示时</description>
     </item>
     
   </channel>
