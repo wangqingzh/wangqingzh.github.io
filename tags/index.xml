@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>course</title>
+      <link>http://localhost:1313/tags/course/</link>
+      <pubDate>Thu, 04 Jun 2020 02:18:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/tags/course/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>jdk</title>
       <link>http://localhost:1313/tags/jdk/</link>
       <pubDate>Thu, 04 Jun 2020 01:25:01 +0800</pubDate>
