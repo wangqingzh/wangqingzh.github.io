@@ -155,5 +155,149 @@
       <description>笔记是看一个学习视频时的总结 他山之石，可以攻玉。他人之事，我事之师。 奥利给 一、数据类型 1 基本数据类型 Number 数值类型 在JavaScript中无论是</description>
     </item>
     
+    <item>
+      <title>SSR订阅解析</title>
+      <link>http://localhost:1313/post/subscribe_analysis/</link>
+      <pubDate>Fri, 04 Oct 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/subscribe_analysis/</guid>
+      <description>前言 偶然的机会得知SSR订阅的内容是Base64加密过的, 于是了解了下Base64, 萌生了用java把SSR订阅解析成JSON数据想法. Base64 https://zh.wikipedia.org/zh-hans/Base64</description>
+    </item>
+    
+    <item>
+      <title>好奇日志</title>
+      <link>http://localhost:1313/post/curiousness/</link>
+      <pubDate>Sat, 24 Aug 2019 19:04:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/curiousness/</guid>
+      <description>网络用语 lz: 楼主 wdnmd: “wo diao ni ma de”的首字母，是骂人的话。也可以称之为“我带你们打”、“我打你妈的”，出自CSGO主播茄子在玩游戏时的口头禅。</description>
+    </item>
+    
+    <item>
+      <title>ArchLinux编译OpenWrt</title>
+      <link>http://localhost:1313/post/openwrt_archlinux/</link>
+      <pubDate>Sat, 24 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/openwrt_archlinux/</guid>
+      <description>环境 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 $ screenfetch -` .o+` qing@qing-pc `ooo/ OS: Arch Linux `+oooo: Kernel: x86_64 Linux 5.2.9-arch1-1-ARCH `+oooooo: Uptime: 13m -+oooooo+: Packages: 824 `/:-:++oooo+: Shell: zsh 5.7.1 `/++++/+++++++: Resolution: 1920x1080 `/++++++++++++++: DE: Deepin 15.11 `/+++ooooooooooooo/` WM: Deepin WM ./ooosssso++osssssso+` WM Theme: deepin .oossssso-````/ossssss+` GTK Theme: deepin [GTK2/3] -osssssso. :ssssssso. Icon Theme:</description>
+    </item>
+    
+    <item>
+      <title>Java 日志</title>
+      <link>http://localhost:1313/post/java_log/</link>
+      <pubDate>Wed, 21 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_log/</guid>
+      <description>日志 简单的说，日志就是记录程序的运行轨迹，方便查找关键信息，也方便快速定位解决问题。 日志级别 日志级别 描述 OFF 关闭：最高级别，不输出日志。 FATAL 致命</description>
+    </item>
+    
+    <item>
+      <title>Java虚拟机</title>
+      <link>http://localhost:1313/post/jvm/</link>
+      <pubDate>Tue, 20 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/jvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tomcat</title>
+      <link>http://localhost:1313/post/tomcat/</link>
+      <pubDate>Mon, 19 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/tomcat/</guid>
+      <description>是什么 The Apache Tomcat® software is an open source implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. The Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket specifications are developed under the Java Community Process. Servlet Spec JSP Spec EL Spec WebSocket Spec JASPIC Spec Apache Tomcat Version Latest Released Version Supported Java Versions 4.0</description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>http://localhost:1313/post/maven/</link>
+      <pubDate>Sun, 18 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/maven/</guid>
+      <description>是什么 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project&amp;rsquo;s build, reporting and documentation from a central piece of information. https://maven.apache.org/ 使用 下载 https://maven.apache.org/download.cgi 安装 (windows) 前提 jdk 添加环境变量 MAVEN_HOME=**\apache-maven-3.6.1\ PATH=;%MAVEN_HOME%\bin 修改配置文件 **\apache-maven-3.6.1\conf\settings.xml 1 2 3 4 5</description>
+    </item>
+    
+    <item>
+      <title>ArchLinux &#43; Deepin Desktop Enviroment</title>
+      <link>http://localhost:1313/post/arch_dde/</link>
+      <pubDate>Fri, 16 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/arch_dde/</guid>
+      <description>效果 启动盘的制作 镜像获取： 官网：https://www.archlinux.org/download/ 镜像站：http://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>数据库</title>
+      <link>http://localhost:1313/post/sql/</link>
+      <pubDate>Thu, 15 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/sql/</guid>
+      <description>格式 SELECT FROM WHERE GROUP BY HAVING ORDER BY LIMIT SELECT语句逻辑执行顺序:1、FROM 2、JOIN 3、ON 4、WHERE 5、GROUP BY 6、AVG、SUM、COU</description>
+    </item>
+    
+    <item>
+      <title>网络与编程</title>
+      <link>http://localhost:1313/post/net_java/</link>
+      <pubDate>Tue, 13 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/net_java/</guid>
+      <description>TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的</description>
+    </item>
+    
+    <item>
+      <title>Java 反射</title>
+      <link>http://localhost:1313/post/java_reflect/</link>
+      <pubDate>Sat, 10 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_reflect/</guid>
+      <description>概念 在计算机科学中，反射是指计算机程序在运行时（Run time）可以访问、检测和修改它本身状态或行为的一种能力。 Oracle对反射的描述: Reflection</description>
+    </item>
+    
+    <item>
+      <title>Java基础</title>
+      <link>http://localhost:1313/post/java_base/</link>
+      <pubDate>Sat, 10 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_base/</guid>
+      <description>基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double</description>
+    </item>
+    
+    <item>
+      <title>Java 注解</title>
+      <link>http://localhost:1313/post/java_annotation/</link>
+      <pubDate>Fri, 09 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_annotation/</guid>
+      <description>概念与用途 注解是一系列元数据，它提供数据用来解释程序代码，但是注解并非是所解释的代码本身的一部分。注解对于代码的运行效果没有直接影响。 用途:</description>
+    </item>
+    
+    <item>
+      <title>Java 时间</title>
+      <link>http://localhost:1313/post/java_time/</link>
+      <pubDate>Wed, 07 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_time/</guid>
+      <description>GMT &amp;amp;&amp;amp; UTC GMT 格林尼治标准时间（英语：Greenwich Mean Time，GMT）是指位于英国伦敦郊区的皇家格林尼治天文台当地的平太阳时，因为本初子午线</description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>http://localhost:1313/post/css/</link>
+      <pubDate>Thu, 01 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/css/</guid>
+      <description>网页布局 标准流 元素\特性 独占一行 设置宽高 排版 块级元素 V V 垂直排版 行内元素 X X 水平排版 行内块级元素 X V 水平排版 浮动流 浮动流是一种&amp;quot;半</description>
+    </item>
+    
+    <item>
+      <title>本地Git 连接GitHub</title>
+      <link>http://localhost:1313/post/githublink/</link>
+      <pubDate>Sat, 20 Jul 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/githublink/</guid>
+      <description>用户名与邮箱设置 1 2 $ git config --global user.name &amp;#34;随便取一个用户名&amp;#34; $ git config --global user.email &amp;#34;输入你自己的邮箱&amp;#34; 可利用git config --list查</description>
+    </item>
+    
   </channel>
 </rss>

@@ -20,5 +20,23 @@
       <description>笔记是看一个学习视频时的总结 他山之石，可以攻玉。他人之事，我事之师。 奥利给 一、数据类型 1 基本数据类型 Number 数值类型 在JavaScript中无论是</description>
     </item>
     
+    <item>
+      <title>网络与编程</title>
+      <link>http://localhost:1313/post/net_java/</link>
+      <pubDate>Tue, 13 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/net_java/</guid>
+      <description>TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的</description>
+    </item>
+    
+    <item>
+      <title>Java基础</title>
+      <link>http://localhost:1313/post/java_base/</link>
+      <pubDate>Sat, 10 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_base/</guid>
+      <description>基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double</description>
+    </item>
+    
   </channel>
 </rss>

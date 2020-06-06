@@ -29,5 +29,32 @@
       <description>插件 Proxy SwitchyOmega Dmooji 弹幕君 - YouTube弹幕助手 Tampermonkey Stylus AdBlock — 最佳广告拦截工具 User-Agent Switcher for Chrome 哔哩哔哩助手：bilibili.com 综合辅助扩展 CaretTab - 新式可以显示时</description>
     </item>
     
+    <item>
+      <title>ArchLinux编译OpenWrt</title>
+      <link>http://localhost:1313/post/openwrt_archlinux/</link>
+      <pubDate>Sat, 24 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/openwrt_archlinux/</guid>
+      <description>环境 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 $ screenfetch -` .o+` qing@qing-pc `ooo/ OS: Arch Linux `+oooo: Kernel: x86_64 Linux 5.2.9-arch1-1-ARCH `+oooooo: Uptime: 13m -+oooooo+: Packages: 824 `/:-:++oooo+: Shell: zsh 5.7.1 `/++++/+++++++: Resolution: 1920x1080 `/++++++++++++++: DE: Deepin 15.11 `/+++ooooooooooooo/` WM: Deepin WM ./ooosssso++osssssso+` WM Theme: deepin .oossssso-````/ossssss+` GTK Theme: deepin [GTK2/3] -osssssso. :ssssssso. Icon Theme:</description>
+    </item>
+    
+    <item>
+      <title>ArchLinux &#43; Deepin Desktop Enviroment</title>
+      <link>http://localhost:1313/post/arch_dde/</link>
+      <pubDate>Fri, 16 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/arch_dde/</guid>
+      <description>效果 启动盘的制作 镜像获取： 官网：https://www.archlinux.org/download/ 镜像站：http://mirrors.</description>
+    </item>
+    
+    <item>
+      <title>本地Git 连接GitHub</title>
+      <link>http://localhost:1313/post/githublink/</link>
+      <pubDate>Sat, 20 Jul 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/githublink/</guid>
+      <description>用户名与邮箱设置 1 2 $ git config --global user.name &amp;#34;随便取一个用户名&amp;#34; $ git config --global user.email &amp;#34;输入你自己的邮箱&amp;#34; 可利用git config --list查</description>
+    </item>
+    
   </channel>
 </rss>

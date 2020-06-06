@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>annotation on wangqingzh</title>
+    <link>http://localhost:1313/tags/annotation/</link>
+    <description>Recent content in annotation on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 09 Aug 2019 10:24:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/annotation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java 注解</title>
+      <link>http://localhost:1313/post/java_annotation/</link>
+      <pubDate>Fri, 09 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_annotation/</guid>
+      <description>概念与用途 注解是一系列元数据，它提供数据用来解释程序代码，但是注解并非是所解释的代码本身的一部分。注解对于代码的运行效果没有直接影响。 用途:</description>
+    </item>
+    
+  </channel>
+</rss>

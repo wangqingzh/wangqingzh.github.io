@@ -20,5 +20,14 @@
       <description>计算机基础 计算机网络（自顶向下方法） 操作系统：精髓与设计原理 深入理解计算机系统 编译原理 软件工程 数据库 MySQL必知必会 高性能MySQL 并发 深</description>
     </item>
     
+    <item>
+      <title>好奇日志</title>
+      <link>http://localhost:1313/post/curiousness/</link>
+      <pubDate>Sat, 24 Aug 2019 19:04:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/curiousness/</guid>
+      <description>网络用语 lz: 楼主 wdnmd: “wo diao ni ma de”的首字母，是骂人的话。也可以称之为“我带你们打”、“我打你妈的”，出自CSGO主播茄子在玩游戏时的口头禅。</description>
+    </item>
+    
   </channel>
 </rss>

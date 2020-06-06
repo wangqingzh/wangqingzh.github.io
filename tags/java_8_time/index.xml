@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java_8_time on wangqingzh</title>
+    <link>http://localhost:1313/tags/java_8_time/</link>
+    <description>Recent content in java_8_time on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 07 Aug 2019 10:24:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/java_8_time/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java 时间</title>
+      <link>http://localhost:1313/post/java_time/</link>
+      <pubDate>Wed, 07 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_time/</guid>
+      <description>GMT &amp;amp;&amp;amp; UTC GMT 格林尼治标准时间（英语：Greenwich Mean Time，GMT）是指位于英国伦敦郊区的皇家格林尼治天文台当地的平太阳时，因为本初子午线</description>
+    </item>
+    
+  </channel>
+</rss>

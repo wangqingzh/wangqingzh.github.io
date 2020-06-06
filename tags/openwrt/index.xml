@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>openwrt on wangqingzh</title>
+    <link>http://localhost:1313/tags/openwrt/</link>
+    <description>Recent content in openwrt on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 Aug 2019 10:24:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/openwrt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ArchLinux编译OpenWrt</title>
+      <link>http://localhost:1313/post/openwrt_archlinux/</link>
+      <pubDate>Sat, 24 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/openwrt_archlinux/</guid>
+      <description>环境 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 $ screenfetch -` .o+` qing@qing-pc `ooo/ OS: Arch Linux `+oooo: Kernel: x86_64 Linux 5.2.9-arch1-1-ARCH `+oooooo: Uptime: 13m -+oooooo+: Packages: 824 `/:-:++oooo+: Shell: zsh 5.7.1 `/++++/+++++++: Resolution: 1920x1080 `/++++++++++++++: DE: Deepin 15.11 `/+++ooooooooooooo/` WM: Deepin WM ./ooosssso++osssssso+` WM Theme: deepin .oossssso-````/ossssss+` GTK Theme: deepin [GTK2/3] -osssssso. :ssssssso. Icon Theme:</description>
+    </item>
+    
+  </channel>
+</rss>

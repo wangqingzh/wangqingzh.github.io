@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Java基础 - wangqingzh</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="wangqingzh" /><meta name="description" content="基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/java_base/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.4eb71590ad024de2ebb1b5eef94cbb645b7e63e6b9c4c837355530a75e112ce1.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Java基础" />
+<meta property="og:description" content="基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/java_base/" />
+<meta property="article:published_time" content="2019-08-10T10:24:02+08:00" />
+<meta property="article:modified_time" content="2020-06-06T10:24:02+08:00" />
+<meta itemprop="name" content="Java基础">
+<meta itemprop="description" content="基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double">
+<meta itemprop="datePublished" content="2019-08-10T10:24:02&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-06T10:24:02&#43;08:00" />
+<meta itemprop="wordCount" content="4937">
+
+
+
+<meta itemprop="keywords" content="note," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java基础"/>
+<meta name="twitter:description" content="基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">wangqingzh</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">wangqingzh</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Java基础</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-10 </span>
+        <div class="post-category">
+            <a href="/categories/java/"> java </a>
+            </div>
+          <span class="more-meta"> 约 4937 字 </span>
+          <span class="more-meta"> 预计阅读 10 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#基本数据类型与包装类">基本数据类型与包装类</a>
+      <ul>
+        <li><a href="#占用空间大小">占用空间大小</a></li>
+        <li><a href="#类型转换">类型转换</a></li>
+        <li><a href="#装箱拆箱">装箱拆箱</a></li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+    <li><a href="#java-注释">java 注释</a></li>
+    <li><a href="#java-关键字">java 关键字</a>
+      <ul>
+        <li><a href="#访问控制">访问控制</a></li>
+        <li><a href="#类-方法和变量修饰符">类, 方法和变量修饰符</a></li>
+        <li><a href="#程序控制">程序控制</a></li>
+        <li><a href="#错误处理">错误处理</a></li>
+        <li><a href="#包相关">包相关</a></li>
+        <li><a href="#基本类型">基本类型</a></li>
+        <li><a href="#变量引用">变量引用</a></li>
+        <li><a href="#保留字">保留字</a></li>
+      </ul>
+    </li>
+    <li><a href="#object-类">Object 类</a></li>
+    <li><a href="#java断言">Java断言</a></li>
+    <li><a href="#枚举-enum">枚举 enum</a></li>
+    <li><a href="#反编译">反编译</a></li>
+    <li><a href="#java序列化的方式">Java序列化的方式</a></li>
+    <li><a href="#java运算符优先级">Java运算符优先级</a></li>
+    <li><a href="#java移位运算">Java移位运算</a>
+      <ul>
+        <li><a href="#左移">&laquo;左移</a></li>
+        <li><a href="#带符号右移">&raquo;带符号右移</a></li>
+        <li><a href="#无符号右移">&raquo;&gt;无符号右移</a></li>
+      </ul>
+    </li>
+    <li><a href="#string-stringbuffer-stringbuilder">String StringBuffer StringBuilder</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="基本数据类型与包装类">基本数据类型与包装类</h1>
+<table>
+<thead>
+<tr>
+<th align="left">基本数据类型</th>
+<th align="left">类型</th>
+<th align="left">包装类</th>
+<th align="left">基类型转包装类</th>
+<th align="left">包装类转基本类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">byte</td>
+<td align="left">数值</td>
+<td align="left">Byte</td>
+<td align="left">Byte.valueOf(byte)</td>
+<td align="left">Byte.byteValue()</td>
+</tr>
+<tr>
+<td align="left">short</td>
+<td align="left">数值</td>
+<td align="left">Short</td>
+<td align="left">Short.valueOf(short)</td>
+<td align="left">Short.shortValue()</td>
+</tr>
+<tr>
+<td align="left">int</td>
+<td align="left">数值</td>
+<td align="left">Integer</td>
+<td align="left">Integer.valueOf(int)</td>
+<td align="left">Integer.intValue()</td>
+</tr>
+<tr>
+<td align="left">long</td>
+<td align="left">数值</td>
+<td align="left">Long</td>
+<td align="left">Long.valueOf(long)</td>
+<td align="left">Long.longValue()</td>
+</tr>
+<tr>
+<td align="left">float</td>
+<td align="left">数值</td>
+<td align="left">Float</td>
+<td align="left">Float.valueOf(float)</td>
+<td align="left">Float.floatValue()</td>
+</tr>
+<tr>
+<td align="left">double</td>
+<td align="left">数值</td>
+<td align="left">Double</td>
+<td align="left">Double.valueOf(double)</td>
+<td align="left">Double.doubleValue()</td>
+</tr>
+<tr>
+<td align="left">char</td>
+<td align="left">字符</td>
+<td align="left">Character</td>
+<td align="left">Character.valueOf(char)</td>
+<td align="left">Char.charValue()</td>
+</tr>
+<tr>
+<td align="left">boolean</td>
+<td align="left">布尔</td>
+<td align="left">Boolean</td>
+<td align="left">Boolean.valueOf(booleann)</td>
+<td align="left">Boolean.booleanValue()</td>
+</tr>
+</tbody>
+</table>
+<h2 id="占用空间大小">占用空间大小</h2>
+<ol>
+<li>byte   有符号8位 取值范围: [-2^7, 2^7-1]</li>
+<li>short  有符号16位 取值范围: [-2^15, 2^15-1]</li>
+<li>int    有符号32位 取值范围: [-2^31, 2^31-1]</li>
+<li>long   有符号64位 取值范围: [-2^63, 2^63-1]</li>
+<li>float  单精度浮点型32位 float类型字面量值通常以f或者F结束 整型可以自动转换为float类型</li>
+<li>double  双精度都典型64位</li>
+<li>char 无符号16位 它的取值范围是[0, 2^16-1] Java中使用Unicode字符集来表示字符</li>
+<li>boolean true/false</li>
+</ol>
+<h2 id="类型转换">类型转换</h2>
+<p>转换分为自动转换和强制转换. 对于自动转换（隐式）, 无需任何操作, 而强制类型转换需要显式转换, 即使用转换操作符（type）.<br>
+7种类型按照其占用空间大小进行排序:
+byte &lt;（short=char）&lt; int &lt; long &lt; float &lt; double<br>
+类型转换原则: 小可直接转大、大转小会失去精度</p>
+<ol>
+<li>代码演示
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Test {
+
+    public static void main(String[] args) {
+        /**
+         * byte &lt;（short=char）&lt; int &lt; long &lt; float &lt; double
+         */
+        // 自动转换
+        byte nbyte = 120;
+        int nint = nbyte;
+        long nlong = nint;
+        float nfloat = nlong;
+        double ndouble = nfloat;
+        System.out.println(nbyte + &#34; &#34; +  nint + &#34; &#34; + nlong + &#34; &#34; + nfloat + &#34; &#34; + ndouble  );
+
+        // 强制转换 ( 通常有损失 )
+        double testd = 12.34;
+        int testi = (int) testd;
+        long testl = (long)testd;
+        System.out.println(testd + &#34; &#34; +  testi + &#34; &#34; + testl);
+
+    }
+}
+    
+输出: 
+120 120 120 120.0 120.0
+12.34 12 12
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h2 id="装箱拆箱">装箱拆箱</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">Integer i = 10;     //装箱 int --&gt; Integer 自动调用 Integer.valueOf(int)
+int n = i;          //拆箱 Integer --&gt; int 自动调用 Integer.intValue()
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public static Boolean valueOf(boolean b) {
+    return (b ? TRUE : FALSE);
+}
+</code></pre></td></tr></table>
+</div>
+</div><!-- raw HTML omitted -->
+<p><code>注意</code>:</p>
+<ul>
+<li>int &ndash;&gt; Integer [-127, 128] 装箱指向同一对象 参考 Integer.valueOf(int) 源码</li>
+<li>Integer、Short、Byte、Character、Long这几个类的valueOf方法的实现是类似的。</li>
+<li>Double、Float的valueOf方法的实现是类似的。<br>
+<!-- raw HTML omitted --></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">public class Test {
+    public static void main(String[] args) {
+        /**
+            *  当 &#34;==&#34;运算符的两个操作数都是 包装器类型的引用，则是比较指向的是否是同一个对象，
+            *  而如果其中有一个操作数是表达式（即包含算术运算）则比较的是数值（即会触发自动拆箱的过程）。
+            *  运算 中间可能会发生类型自动转换
+            *  
+            *  另外，对于包装器类型，equals方法并不会进行类型转换。
+            */
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 3;
+        Integer d = 3;
+        Integer e = 321;
+        Integer f = 321;
+        Long g = 3L;
+        Long h = 2L;
+
+        System.out.println(c==d);           // 对象比较 c和d指向同一个对象 true
+        System.out.println(e==f);           // 对象比较 e和f不指向同一个对象 false
+        System.out.println(c==(a+b));       // 数值比较 a, b, c三个对象自动拆箱( 调用intValue() ) true
+        System.out.println(c.equals(a+b));  // 对象比较 a+b 先调用intValue()拆箱  相加完毕 调用valueOf()装箱 指向同一对象  true
+        System.out.println(g==(a+b));       // 数值比较  int --&gt; long 类型自动转换   true
+        System.out.println(g.equals(a+b));  // 对象比较  Long Integer  false
+        System.out.println(g.equals(a+h));  // 对象比较  a+h  装箱时用Long.valueOf() true
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="参考">参考</h2>
+<p><a href="https://blog.csdn.net/xialei199023/article/details/63251295">https://blog.csdn.net/xialei199023/article/details/63251295</a><br>
+<a href="https://www.cnblogs.com/dolphin0520/p/3780005.html">https://www.cnblogs.com/dolphin0520/p/3780005.html</a><br>
+jdk api 1.8</p>
+<h1 id="java-注释">java 注释</h1>
+<p>单行注释: <code>// 这是单行注释</code><br>
+多行注释: <code>/* 这是多行注释 */</code><br>
+Javadoc注释: <code>/** 这是javadoc注释*/</code></p>
+<p>参照: <a href="https://blog.csdn.net/shiyuezhong/article/details/8205281">https://blog.csdn.net/shiyuezhong/article/details/8205281</a></p>
+<h1 id="java-关键字">java 关键字</h1>
+<h2 id="访问控制">访问控制</h2>
+<table>
+<thead>
+<tr>
+<th align="center">访问权限</th>
+<th align="center">当前类</th>
+<th align="center">包</th>
+<th align="center">子类</th>
+<th align="center">其他包</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">public</td>
+<td align="center">∨</td>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td align="center">protect</td>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">default</td>
+<td align="center">V</td>
+<td align="center">V</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td align="center">private</td>
+<td align="center">V</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+</tr>
+</tbody>
+</table>
+<h2 id="类-方法和变量修饰符">类, 方法和变量修饰符</h2>
+<ol>
+<li>
+<p><code>abstract</code></p>
+</li>
+<li>
+<p><code>class</code></p>
+</li>
+<li>
+<p><code>extend</code></p>
+</li>
+<li>
+<p><code>final</code></p>
+<blockquote>
+<p>在Java中，final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。final方法在编译阶段绑定，称为静态绑定(static binding)。下面就从这四个方面来了解一下final关键字的基本用法。</p>
+</blockquote>
+<ul>
+<li>
+<p>修饰类<br>
+当用final修饰一个类时，表明这个类不能被继承，不能有子类。也就是说，如果一个类你永远不会让他被继承，就可以用final进行修饰。final类中的成员变量可以根据需要设为final，但是要注意final类中的所有成员方法都会被隐式地指定为final方法。</p>
+</li>
+<li>
+<p>修饰方法<br>
+下面这段话摘自《Java编程思想》：
+使用final方法的原因有两个。第一个原因是把方法锁定，以防任何继承类修改它的含义；第二个原因是效率。在早期的Java实现版本中，会将final方法转为内嵌调用。但是如果方法过于庞大，可能看不到内嵌调用带来的任何性能提升。在最近的Java版本中，不需要使用final方法进行这些优化了。
+因此，如果只有在想明确禁止 该方法在子类中被覆盖的情况下才将方法设置为final的。
+还有就是，类的private方法会隐式地被指定为final方法。</p>
+</li>
+<li>
+<p>修饰变量<br>
+修饰变量是final用得最多的地方。
+对于一个final变量，如果是基本数据类型的变量，则其数值一旦在初始化之后便不能更改；如果是引用类型的变量，则在对其初始化之后便不能再让其指向另一个对象。引用变量被final修饰之后，虽然不能再指向其他对象，但是它指向的对象的内容是可变的。</p>
+</li>
+<li>
+<p>final参数<br>
+当函数参数为final类型时，你可以读取使用该参数，但是无法改变该参数的值或者引用指向。道理同final变量。<br>
+概括起来就是：<br>
+在A类是声明为final类型的方法，那么不能在子类里被覆盖；<br>
+如果A类被声明为final类型的类，那么B类不能继承A类；<br>
+如果成员变量声明为final类型，那么成员变量不能被修改；<br>
+注意：<br>
+1、一个类不能同时是 abstract 又是 final。abstract 意味着必须扩展类，final 意味着不能扩展类。一个方法不能同时是 abstract 又是 final。abstract 意味着必须重写方法，final 意味着不能重写方法。两者是相互矛盾的。<br>
+2、当用final作用于类的成员变量时，成员变量（注意是类的成员变量，局部变量只需要保证在使用之前被初始化赋值即可）必须在定义时或者构造器中进行初始化赋值，而且final变量一旦被初始化赋值之后，就不能再被赋值了。<br>
+3、final变量和普通变量的区别。当final变量是基本数据类型以及String类型时，如果在编译期间能知道它的确切值，则编译器会进行优化，会把它当做编译期常量使用。也就是说在用到该final变量的地方，相当于直接访问的这个常量，不需要在运行时确定。这种和C语言中的宏替换有点像。而普通变量在编译时，确定不了自身的值，需要在运行时才能知道。<br>
+4、局部内部类和匿名内部类只能访问局部final变量。因为这里的局部变量，需要在编译阶段便需要确定下来的。也就是说，如果局部变量的值在编译期间就可以确定，则直接在匿名内部里面创建一个拷贝。如果局部变量的值无法在编译期间确定，则通过构造器传参的方式来对拷贝进行初始化赋值。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>implements</code></p>
+</li>
+<li>
+<p><code>interface</code></p>
+</li>
+<li>
+<p><code>native</code></p>
+</li>
+<li>
+<p><code>new</code></p>
+</li>
+<li>
+<p><code>static</code></p>
+<ul>
+<li>
+<p><code>static修饰属性</code>：无论一个类生成了多少个对象，所有这些对象共同使用唯一一份静态的成员变量；一个对象对该静态成员变量进行了修改，其他对象的该静态成员变量的值也会随之发生变化。如果一个成员变量是static的，那么我们可以通过‘类名.成员变量名’的方式来使用它。</p>
+</li>
+<li>
+<p><code>static修饰方法</code>：static修饰的方法叫做静态方法。对于静态方法来说，可以使用‘类名.方法名’的方式来访问。静态方法只能继承，不能重写（Override），因为重写是用于表现多态的，重写只能适用于实例方法，而静态方法是可以不生成实例直接用类名来调用，这就会与重写的定义所冲突，与多态所冲突，所以静态方法不能重写，只能是隐藏。</p>
+</li>
+<li>
+<p>static方法与非static方法：不能在静态方法中访问非静态成员变量；可以在静态方法中访问静态的成员变量。可以在非静态方法中访问静态的成员变量：因为静态方法可以直接用类名来调用，而非静态成员变量是在创建对象实例时才为变量分配内存和初始化变量值。</p>
+</li>
+<li>
+<p>不能在静态方法中使用this关键字：因为静态方法可以直接用类名来调用，而this实际上是创建实例时，实例对应的一个应用，所以不能在静态方法上使用this。</p>
+</li>
+<li>
+<p><code>static修饰代码块</code>：静态代码块。静态代码块的作用也是完成一些初始化工作。首先执行静态代码块，然后执行构造方法。静态代码块在类被加载的时候执行，而构造方法是在生成对象的时候执行；要想调用某个类来生成对象，首先需要将类加载到Java虚拟机上（JVM），然后由JVM加载这个类来生成对象。</p>
+</li>
+<li>
+<p>类的静态代码块只会执行一次，是在类被加载的时候执行的，因为每个类只会被加载一次，所以静态代码块也只会被执行一次；而构造方法则不然，每次生成一个对象的时候都会调用类的构造方法，所以new一次就会调用构造方法一次。如果继承体系中既有构造方法，又有静态代码块，那么首先执行最顶层的类的静态代码块，一直执行到最底层类的静态代码块，然后再去执行最顶层类的构造方法，一直执行到最底层类的构造方法。注意：静态代码块只会执行一次。</p>
+</li>
+<li>
+<p><code>static修饰类</code>：这个有点特殊，首先，static是可以用来修饰类的，但是static是不允许用来修饰普通类，只能用来修饰内部类，被static所修饰的内部类可以用new关键字来直接创建一个实例，不需要先创建外部类实例。static内部类可以被其他类实例化和引用（即使它是顶级类）。</p>
+</li>
+<li>
+<p>其实理解起来也简单。因为static主要是修饰类里面的成员，包括内部类、属性、方法这些。修饰这些变量的目的也很单纯，那就是暗示这个成员在该类之中是唯一的一份拷贝，即便是不断的实例化该类，所有的这个类的对象都会共享这些static成员。这样就好办了。因为是共享的、唯一的，所以，也就不需要在实例化这个类以后再通过这个类来调用这个成员了，显然有点麻烦，所以就简单一点，直接通过类名直接调用static成员，更加直接。然而这样设置之后，就出现了一个限制，就是，static方法之中不能访问非static属性，因为这个时候非static属性可能还没有给他分配内存，该类还没有实例化。</p>
+</li>
+<li>
+<p>所以，通常，static 关键字意味着应用它的实体在声明该实体的类的任何特定实例外部可用。</p>
+</li>
+<li>
+<p>可以从类的外部调用 static 方法，而不用首先实例化该类。这样的引用始终包括类名作为方法调用的限定符。</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>strictfp</code></p>
+</li>
+<li>
+<p><code>synchronized</code></p>
+</li>
+<li>
+<p><code>transient</code></p>
+</li>
+<li>
+<p><code>volatile</code></p>
+</li>
+</ol>
+<h2 id="程序控制">程序控制</h2>
+<ol>
+<li><code>break</code></li>
+<li><code>continue</code></li>
+<li><code>return</code></li>
+<li><code>do</code></li>
+<li><code>while</code></li>
+<li><code>if</code></li>
+<li><code>else</code></li>
+<li><code>for</code></li>
+<li><code>instanceof</code></li>
+<li><code>switch</code></li>
+<li><code>case</code></li>
+<li><code>default</code></li>
+</ol>
+<h2 id="错误处理">错误处理</h2>
+<ol>
+<li><code>try</code></li>
+<li><code>catch</code></li>
+<li><code>throw</code></li>
+<li><code>throws</code></li>
+<li><code>finally</code></li>
+</ol>
+<h2 id="包相关">包相关</h2>
+<ol>
+<li><code>import</code></li>
+<li><code>package</code></li>
+</ol>
+<h2 id="基本类型">基本类型</h2>
+<ol>
+<li><code>byte</code></li>
+<li><code>short</code></li>
+<li><code>int</code></li>
+<li><code>long</code></li>
+<li><code>char</code></li>
+<li><code>float</code></li>
+<li><code>double</code></li>
+<li><code>boolean</code></li>
+<li><code>null</code></li>
+<li><code>true</code></li>
+<li><code>false</code></li>
+</ol>
+<h2 id="变量引用">变量引用</h2>
+<ol>
+<li><code>super</code></li>
+<li><code>this</code></li>
+<li><code>void</code></li>
+</ol>
+<h2 id="保留字">保留字</h2>
+<ol>
+<li><code>goto</code></li>
+<li><code>const</code></li>
+</ol>
+<h1 id="object-类">Object 类</h1>
+<p>构造函数</p>
+<p><code>hashCode()</code>: 用户获取对象的hash值，用于检索</p>
+<p><code>equals()</code>: 用于确认两个对象是否相等；补充，哈希值相同的对象不一定equals()，但equals()的两个对象，hash值一定相等</p>
+<p><code>toString()</code>: 返回一个String对象，用来标识自己</p>
+<p><code>getClass()</code>: 返回一个class对象，打印的格式一般为 class <a href="http://package.name.xxx">http://package.name.xxx</a>，经常用于java的反射机制</p>
+<p><code>clone()</code>: 用来另存一个当前存在的对象</p>
+<p><code>finalize()</code>: 垃圾回收的时候回用到，匿名对象回收之前会调用到</p>
+<p><code>wait()</code>: 用于让当前线程失去操作权限，当前线程进入等待序列</p>
+<p><code>wait(long)、wait(long,int)</code>: 用户设定下一次获取锁的距离当前释放锁的间隔时间</p>
+<p><code>notify()</code>: 用于随机通知一个持有对象锁的线程获取操作的权限</p>
+<p><code>notifyAll()</code>: 用于通知所有持有对象锁的线程获取操作权限</p>
+<h1 id="java断言">Java断言</h1>
+<blockquote>
+<p>在Java中，assert关键字是从JAVA SE 1.4 引入的，为了避免和老版本的Java代码中使用了assert关键字导致错误，Java在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都将忽略！），如果要开启断言检查，则需要用开关-enableassertions或-ea来开启</p>
+</blockquote>
+<p>格式:<br>
+<code>assert &lt;boolean表达式&gt; </code><br>
+<code>assert &lt;boolean表达式&gt; : &lt;错误信息表达式&gt; </code></p>
+<p>总结: 不建议使用</p>
+<h1 id="枚举-enum">枚举 enum</h1>
+<p><a href="https://juejin.im/post/5c13133be51d456fac740c98">https://juejin.im/post/5c13133be51d456fac740c98</a></p>
+<h1 id="反编译">反编译</h1>
+<p><a href="https://varaneckas.com/jad/">https://varaneckas.com/jad/</a></p>
+<p><code>jad.exe -r -ff -d src -s java classes/**/*.class</code></p>
+<p>其中 -r 表示恢复源文件的目录结构, -ff 表示将类属性定义放在类方法定义之前, -d 表示输出目录, -s 表示文件的扩展名.</p>
+<h1 id="java序列化的方式">Java序列化的方式</h1>
+<h1 id="java运算符优先级">Java运算符优先级</h1>
+<table>
+<thead>
+<tr>
+<th align="left">优先级</th>
+<th align="left">运算符</th>
+<th align="left">结合性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">() [] .</td>
+<td align="left">从左到右</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">! +(正)  -(负) ~ ++ &ndash;</td>
+<td align="left">从右向左</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">* / %</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">+(加) -(减)</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">&laquo; &raquo; &raquo;&gt;</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">&lt; &lt;= &gt; &gt;= instanceof</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">==   !=</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">&amp;(按位与)</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">^</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">|</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">&amp;&amp;</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">||</td>
+<td align="left">从左向右</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">?:</td>
+<td align="left">从右向左</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">= += -= *= /= %= &amp;= |= ^=  ~=  &laquo;= &raquo;=   &raquo;&gt;=</td>
+<td align="left">从右向左</td>
+</tr>
+</tbody>
+</table>
+<h1 id="java移位运算">Java移位运算</h1>
+<p>整数在计算机中是以补码存储的. 最高位为符号位, 0为正数, 1为负数. 正数的反码, 补码都是原码. 负数的补码=反码 + 1.</p>
+<h2 id="左移">&laquo;左移</h2>
+<p>正负数皆右补0 符号位可变</p>
+<h2 id="带符号右移">&raquo;带符号右移</h2>
+<p>正数左补0、负数左补1</p>
+<h2 id="无符号右移">&raquo;&gt;无符号右移</h2>
+<p>正数左补0负数左补1</p>
+<h1 id="string-stringbuffer-stringbuilder">String StringBuffer StringBuilder</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">String          字符串常量  
+StringBuffer    字符串变量（线程安全）  
+StringBuilder   字符串变量（非线程安全）  
+</code></pre></td></tr></table>
+</div>
+</div><p>三者都是final类，都不允许被继承；
+String类长度不可变，StringBuffer和StringBuilder类长度是可变的。</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">wangqingzh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-06-06
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/note/">note</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/java_reflect/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Java 反射</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/java_annotation/">
+            <span class="next-text nav-default">Java 注解</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="comments-gitment"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitment = new Gitment({
+        id: '2019-08-10 10:24:02 \u002b0800 CST',
+        title: 'Java基础',
+        link: decodeURI(location.href),
+        desc: '基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double',
+        owner: 'wangqingzh',
+        repo: 'wangqingzh.github.io',
+        oauth: {
+          client_id: 'f0282098d5a445170d61',
+          client_secret: '288ae57025417e200f9c0e56dcbd53060c279881'
+        }
+      });
+      gitment.render('comments-gitment');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:qingwang7962@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/wangqingzh" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wangqingzh</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

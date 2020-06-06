@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sql on wangqingzh</title>
+    <link>http://localhost:1313/tags/sql/</link>
+    <description>Recent content in sql on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Aug 2019 10:24:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据库</title>
+      <link>http://localhost:1313/post/sql/</link>
+      <pubDate>Thu, 15 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/sql/</guid>
+      <description>格式 SELECT FROM WHERE GROUP BY HAVING ORDER BY LIMIT SELECT语句逻辑执行顺序:1、FROM 2、JOIN 3、ON 4、WHERE 5、GROUP BY 6、AVG、SUM、COU</description>
+    </item>
+    
+  </channel>
+</rss>

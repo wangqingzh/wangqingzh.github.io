@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ArchLinux &#43; Deepin Desktop Enviroment - wangqingzh</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="wangqingzh" /><meta name="description" content="效果 启动盘的制作 镜像获取： 官网：https://www.archlinux.org/download/ 镜像站：http://mirrors." />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/arch_dde/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.4eb71590ad024de2ebb1b5eef94cbb645b7e63e6b9c4c837355530a75e112ce1.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="ArchLinux &#43; Deepin Desktop Enviroment" />
+<meta property="og:description" content="效果 启动盘的制作 镜像获取： 官网：https://www.archlinux.org/download/ 镜像站：http://mirrors." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/arch_dde/" />
+<meta property="article:published_time" content="2019-08-16T10:24:02+08:00" />
+<meta property="article:modified_time" content="2020-06-06T10:24:02+08:00" />
+<meta itemprop="name" content="ArchLinux &#43; Deepin Desktop Enviroment">
+<meta itemprop="description" content="效果 启动盘的制作 镜像获取： 官网：https://www.archlinux.org/download/ 镜像站：http://mirrors.">
+<meta itemprop="datePublished" content="2019-08-16T10:24:02&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-06T10:24:02&#43;08:00" />
+<meta itemprop="wordCount" content="1144">
+
+
+
+<meta itemprop="keywords" content="linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ArchLinux &#43; Deepin Desktop Enviroment"/>
+<meta name="twitter:description" content="效果 启动盘的制作 镜像获取： 官网：https://www.archlinux.org/download/ 镜像站：http://mirrors."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">wangqingzh</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">wangqingzh</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">ArchLinux &#43; Deepin Desktop Enviroment</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-16 </span>
+        <div class="post-category">
+            <a href="/categories/tips/"> tips </a>
+            </div>
+          <span class="more-meta"> 约 1144 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#效果">效果</a></li>
+    <li><a href="#启动盘的制作">启动盘的制作</a>
+      <ul>
+        <li><a href="#镜像获取">镜像获取：</a></li>
+        <li><a href="#制作启动盘">制作启动盘</a></li>
+      </ul>
+    </li>
+    <li><a href="#系统的安装">系统的安装</a></li>
+    <li><a href="#配置系统">配置系统</a></li>
+    <li><a href="#安装桌面环境">安装桌面环境</a></li>
+    <li><a href="#安装后">安装后</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="效果">效果</h1>
+<p><img src="/img/dde_1.png" alt="image"></p>
+<p><img src="/img/dde_2.png" alt="image"></p>
+<p><img src="/img/dde_3.png" alt="image"></p>
+<h1 id="启动盘的制作">启动盘的制作</h1>
+<h2 id="镜像获取">镜像获取：</h2>
+<ol>
+<li>官网：https://www.archlinux.org/download/</li>
+<li>镜像站：http://mirrors.ustc.edu.cn/archlinux/iso/</li>
+</ol>
+<h2 id="制作启动盘">制作启动盘</h2>
+<ol>
+<li>rufus：https://rufus.akeo.ie/</li>
+<li>dd if=镜像路径 of=设备</li>
+</ol>
+<h1 id="系统的安装">系统的安装</h1>
+<ol>
+<li>
+<p>通过 bios 或者 boot menu 从U盘启动（uefi+gpt）</p>
+</li>
+<li>
+<p>控制台键盘布局默认为 us，跳过不管</p>
+</li>
+<li>
+<p>验证启动模式（目录存在即 uefi）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$　ls /sys/firmware/efi/efivars
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><code>ping bilibili.com</code> 测试网络</p>
+</li>
+<li>
+<p>更新系统时间：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ timedatectl set-ntp <span class="nb">true</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>硬盘分区  fdisk cgdisk parted mkfs 等命令的使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">为 /boot 建立 200M （随意不要太小就行）分区，mkfs.fat -F <span class="m">32</span> 格式化分区
+
+为 /、/home、/usr 等建立分区
+
+交换分区的创建 mkswap /dev/sdxx  swapon /dev/sdxx
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>挂载分区 mkdir mount 等命令的使用</p>
+</li>
+<li>
+<p>修改镜像源 nano、vim 等使用</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">位置：/etc/pacman.d/mirrorlist（建议ustc）
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装基本系统</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># pacstrap /mnt base linux linux-firmware base-devel</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h1 id="配置系统">配置系统</h1>
+<ol>
+<li>
+<p><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</code> 然后 cat 一下看看有没有问题</p>
+</li>
+<li>
+<p><code>arch-chroot /mnt</code> 进入系统</p>
+</li>
+<li>
+<p>时区</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>本地化 <code>nano /etc/locale.gen</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">en_US.UTF-8 UTF-8          
+zh_CN.UTF-8 UTF-8          
+zh_TW.UTF-8 UTF-8
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>接着执行 locale-gen 以生成 locale 讯息</li>
+<li>编辑 /etc/locale.conf 写入一下内容：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>主机名<br>
+1 vim /etc/hostname</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">myhostname
+</code></pre></td></tr></table>
+</div>
+</div><p>2 vim /etc/hosts</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">127.0.0.1   localhost 
+::1　　　　　localhost 
+127.0.1.1   myhostname.localdomain　　myhostname
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>引导程序 grub</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ pacman -S grub  efibootmgr       
+$ grub-install --target<span class="o">=</span>x86_64-efi --efi-directory<span class="o">=</span>/boot --bootloader-id<span class="o">=</span>grub         
+$ grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre></td></tr></table>
+</div>
+</div><p><code>注</code>：多系统可以安装os-prober，然后将其他系统所在的efi分区挂载，再运行grub-mkconfig</p>
+</li>
+<li>
+<p><code>passwd root</code> 为root设置密码</p>
+</li>
+<li>
+<p>创建用户</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$　useradd -m -g users -G wheel -s /bin/zsh archie         
+$　passwd archie         
+$　pacman -S sudo         
+$　vim /etc/sudoers
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>网络配置</p>
+<ul>
+<li>有线连接 <code>systemctl enable dhcpcd</code>  利用 <code>NetworkManager</code> 管理网络 可不设置该项</li>
+<li>无线连接 <code>pacman -S iw wpa_supplicant dialog</code></li>
+</ul>
+</li>
+<li>
+<p><code>pacman -S intel-ucode</code> || <code>pacman -S amd-ucode</code> 安装cpu微码</p>
+</li>
+<li>
+<p>重启 exit 退出chroot环境 umount -R /mnt 卸载分区 reboot</p>
+</li>
+</ol>
+<h1 id="安装桌面环境">安装桌面环境</h1>
+<ol>
+<li>
+<p>显卡驱动 pacman -S 驱动包</p>
+<ul>
+<li>通用   xf86-video-vesa</li>
+<li>intel  xf86-video-intel</li>
+<li>详细参阅 archwiki，fuck nvidia!!!</li>
+</ul>
+</li>
+<li>
+<p><code>pacman -S xorg</code></p>
+</li>
+<li>
+<p><code>pacman -S noto-fonts-cjk</code>  中文字体</p>
+</li>
+<li>
+<p>dde 桌面和一些组件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ pacman -S deepin      
+$ pacman -S deepin-extra  networkmanager
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>启用桌面和网络设置<br>
+要使用 DDE 默认的 lightdm greeter，你必须修改 [Seat:*] 部分下的配置文件以声明：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">/etc/lightdm/lightdm.conf
+<span class="o">[</span>Seat:*<span class="o">]</span>
+...
+greeter-session<span class="o">=</span>lightdm-deepin-greeter
+</code></pre></td></tr></table>
+</div>
+</div><p>需要注意的是，非 root 用户需要存在有效的主目录才能使 greeter 工作。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ systemctl <span class="nb">enable</span> lightdm
+$ systemctl <span class="nb">enable</span> NetworkManager
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>reboot</p>
+</li>
+</ol>
+<h1 id="安装后">安装后</h1>
+<ol>
+<li>
+<p>添加 archlinuxcn 源</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">vim /etc/pacman.conf         
+<span class="o">[</span>archlinuxcn<span class="o">]</span>          
+<span class="nv">Server</span> <span class="o">=</span> https://mirrors.ustc.edu.cn/archlinuxcn/<span class="nv">$arch</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>然后请安装 archlinuxcn-keyring 包以导入 GPG key。</li>
+<li>出现问题访问这里：https://www.archlinuxcn.org/gnupg-2-1-and-the-pacman-keyring/</li>
+</ul>
+</li>
+<li>
+<p>呵呵一笑</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo pacman -S v2ray or yaourt shadowsocksr-libev         
+$ pacman -S proxychains-ng        
+$ vim /etc/proxychains.conf（记不太清了，请Tab）
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>浏览器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo pacman -S google-chrome         
+$ sudo pacman -S firefox firefox-xxxxx<span class="o">(</span>中文包<span class="o">)</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>oh-my-zsh</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo pacman -S zsh git curl        
+$ sudo vim /etc/passwd 
+$ sh -c <span class="s2">&#34;</span><span class="k">$(</span>curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="k">)</span><span class="s2">&#34;</span> or sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>中文输入法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ vim ~/.xprofile                 
+    <span class="nb">export</span> <span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx                 
+    <span class="nb">export</span> <span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx                 
+    <span class="nb">export</span> <span class="nv">XMODIFIERS</span><span class="o">=</span><span class="s2">&#34;@im=fcitx&#34;</span> 
+          
+$ pacman -S fcitx-im fcitx-configtool
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>图标包</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo pacman numix<span class="o">(</span>自行Tab<span class="o">)</span>         
+$ yaourt paper icon
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>grub 美化</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ sudo pacman -S grub-customizer<span class="o">(</span>自行 Tab，天天 Tab 东西记不住啊<span class="o">)</span>         
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><a href="https://www.gnome-look.org/p/1220920">https://www.gnome-look.org/p/1220920</a></li>
+</ul>
+</li>
+<li>
+<p>与 win10 组双系统，arch 使用本地时间</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">$ timedatectl set-local-rtc <span class="nb">true</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">wangqingzh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-06-06
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/linux/">linux</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/maven/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Maven</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/sql/">
+            <span class="next-text nav-default">数据库</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="comments-gitment"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitment = new Gitment({
+        id: '2019-08-16 10:24:02 \u002b0800 CST',
+        title: 'ArchLinux \u002b Deepin Desktop Enviroment',
+        link: decodeURI(location.href),
+        desc: '效果 启动盘的制作 镜像获取： 官网：https:\/\/www.archlinux.org\/download\/ 镜像站：http:\/\/mirrors.',
+        owner: 'wangqingzh',
+        repo: 'wangqingzh.github.io',
+        oauth: {
+          client_id: 'f0282098d5a445170d61',
+          client_secret: '288ae57025417e200f9c0e56dcbd53060c279881'
+        }
+      });
+      gitment.render('comments-gitment');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:qingwang7962@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/wangqingzh" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wangqingzh</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -20,5 +20,68 @@
       <description>继承关系 区别 String 长度不可变 String 1 2 public final class String implements java.io.Serializable, Comparable&amp;lt;String&amp;gt;, CharSequence, Constable, ConstantDesc { private final byte[] value; 浅析Java中的final关键字 StringBuilder 1 public final class StringBuilder extends AbstractStringBuilder implements java.io.Serializable, Comparable&amp;lt;StringBuilder&amp;gt;, CharSequence StringBuffer 1 public final class StringBuffer extends AbstractStringBuilder implements java.io.Serializable, Comparable&amp;lt;StringBuffer&amp;gt;, CharSequence</description>
     </item>
     
+    <item>
+      <title>Java 日志</title>
+      <link>http://localhost:1313/post/java_log/</link>
+      <pubDate>Wed, 21 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_log/</guid>
+      <description>日志 简单的说，日志就是记录程序的运行轨迹，方便查找关键信息，也方便快速定位解决问题。 日志级别 日志级别 描述 OFF 关闭：最高级别，不输出日志。 FATAL 致命</description>
+    </item>
+    
+    <item>
+      <title>Java虚拟机</title>
+      <link>http://localhost:1313/post/jvm/</link>
+      <pubDate>Tue, 20 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/jvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>http://localhost:1313/post/maven/</link>
+      <pubDate>Sun, 18 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/maven/</guid>
+      <description>是什么 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project&amp;rsquo;s build, reporting and documentation from a central piece of information. https://maven.apache.org/ 使用 下载 https://maven.apache.org/download.cgi 安装 (windows) 前提 jdk 添加环境变量 MAVEN_HOME=**\apache-maven-3.6.1\ PATH=;%MAVEN_HOME%\bin 修改配置文件 **\apache-maven-3.6.1\conf\settings.xml 1 2 3 4 5</description>
+    </item>
+    
+    <item>
+      <title>Java 反射</title>
+      <link>http://localhost:1313/post/java_reflect/</link>
+      <pubDate>Sat, 10 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_reflect/</guid>
+      <description>概念 在计算机科学中，反射是指计算机程序在运行时（Run time）可以访问、检测和修改它本身状态或行为的一种能力。 Oracle对反射的描述: Reflection</description>
+    </item>
+    
+    <item>
+      <title>Java基础</title>
+      <link>http://localhost:1313/post/java_base/</link>
+      <pubDate>Sat, 10 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_base/</guid>
+      <description>基本数据类型与包装类 基本数据类型 类型 包装类 基类型转包装类 包装类转基本类型 byte 数值 Byte Byte.valueOf(byte) Byte.byteValue() short 数值 Short Short.valueOf(short) Short.shortValue() int 数值 Integer Integer.valueOf(int) Integer.intValue() long 数值 Long Long.valueOf(long) Long.longValue() float 数值 Float Float.valueOf(float) Float.floatValue() double 数值 Double</description>
+    </item>
+    
+    <item>
+      <title>Java 注解</title>
+      <link>http://localhost:1313/post/java_annotation/</link>
+      <pubDate>Fri, 09 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_annotation/</guid>
+      <description>概念与用途 注解是一系列元数据，它提供数据用来解释程序代码，但是注解并非是所解释的代码本身的一部分。注解对于代码的运行效果没有直接影响。 用途:</description>
+    </item>
+    
+    <item>
+      <title>Java 时间</title>
+      <link>http://localhost:1313/post/java_time/</link>
+      <pubDate>Wed, 07 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_time/</guid>
+      <description>GMT &amp;amp;&amp;amp; UTC GMT 格林尼治标准时间（英语：Greenwich Mean Time，GMT）是指位于英国伦敦郊区的皇家格林尼治天文台当地的平太阳时，因为本初子午线</description>
+    </item>
+    
   </channel>
 </rss>

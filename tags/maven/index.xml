@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>maven on wangqingzh</title>
+    <link>http://localhost:1313/tags/maven/</link>
+    <description>Recent content in maven on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Aug 2019 10:24:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maven</title>
+      <link>http://localhost:1313/post/maven/</link>
+      <pubDate>Sun, 18 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/maven/</guid>
+      <description>是什么 Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project&amp;rsquo;s build, reporting and documentation from a central piece of information. https://maven.apache.org/ 使用 下载 https://maven.apache.org/download.cgi 安装 (windows) 前提 jdk 添加环境变量 MAVEN_HOME=**\apache-maven-3.6.1\ PATH=;%MAVEN_HOME%\bin 修改配置文件 **\apache-maven-3.6.1\conf\settings.xml 1 2 3 4 5</description>
+    </item>
+    
+  </channel>
+</rss>

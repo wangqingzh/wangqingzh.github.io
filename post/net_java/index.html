@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>网络与编程 - wangqingzh</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="wangqingzh" /><meta name="description" content="TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/net_java/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.4eb71590ad024de2ebb1b5eef94cbb645b7e63e6b9c4c837355530a75e112ce1.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="网络与编程" />
+<meta property="og:description" content="TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/net_java/" />
+<meta property="article:published_time" content="2019-08-13T10:24:02+08:00" />
+<meta property="article:modified_time" content="2020-06-06T10:24:02+08:00" />
+<meta itemprop="name" content="网络与编程">
+<meta itemprop="description" content="TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的">
+<meta itemprop="datePublished" content="2019-08-13T10:24:02&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-06T10:24:02&#43;08:00" />
+<meta itemprop="wordCount" content="3723">
+
+
+
+<meta itemprop="keywords" content="note,java," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="网络与编程"/>
+<meta name="twitter:description" content="TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">wangqingzh</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">wangqingzh</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">网络与编程</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-13 </span>
+        <div class="post-category">
+            <a href="/categories/note/"> note </a>
+            </div>
+          <span class="more-meta"> 约 3723 字 </span>
+          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#tcp-udp">TCP UDP</a></li>
+    <li><a href="#三次握手-四次挥手">三次握手 四次挥手</a></li>
+    <li><a href="#长连接-短连接">长连接 短连接</a></li>
+    <li><a href="#inetaddress-ip地址对象">InetAddress IP地址对象</a></li>
+    <li><a href="#udp-网络编程">UDP 网络编程</a></li>
+    <li><a href="#tcp-网络编程">TCP 网络编程</a></li>
+    <li><a href="#java网络编程相关概念">Java网络编程相关概念</a>
+      <ul>
+        <li><a href="#bio-编程">BIO 编程</a></li>
+        <li><a href="#nio-编程">NIO 编程</a></li>
+        <li><a href="#aio编程">AIO编程</a></li>
+      </ul>
+    </li>
+    <li><a href="#练习">练习</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="tcp-udp">TCP UDP</h1>
+<p>TCP 传输控制协议<br>
+UDP 用户数据报协议</p>
+<ol>
+<li>
+<p>TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接；</p>
+</li>
+<li>
+<p>TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序达到；UDP尽最大努力交付，即不保证可靠交付；</p>
+</li>
+<li>
+<p>TCP面向字节流，实际上是TCP把数据看成一连串无结构的字节流；UDP是面向报文，UDP没有拥塞控制，因此网络出现拥塞不会使源主机的发送速率降低（对实时应用很有用，如IP电话，实时视频会议等）</p>
+</li>
+<li>
+<p>每一条TCP连接只能是点到点的，UDP支持一对一，一对多，多对一和多对多的交互通信；</p>
+</li>
+<li>
+<p>TCP首部开销20字节，UDP首部开销8字节；</p>
+</li>
+<li>
+<p>TCP的逻辑通信信道是全双工的可靠信道，UDP则是不可靠信道；</p>
+</li>
+</ol>
+<h1 id="三次握手-四次挥手">三次握手 四次挥手</h1>
+<h1 id="长连接-短连接">长连接 短连接</h1>
+<ol>
+<li>
+<p><code>短连接</code>: 连接 &ndash;&gt; 传输数据 &ndash;&gt; 关闭连接<br>
+HTTP是无状态的，浏览器和服务器之间每进行一次http操作，就建立一次连接，但任务结束就中断连接；也可以理解为短连接是指socket连接后，发送接收完数据马上断开连接；</p>
+</li>
+<li>
+<p><code>长连接</code>: 连接 &ndash;&gt; 传输数据 &ndash;&gt; 保持连接 &ndash;&gt; 传输数据 &ndash;&gt; &hellip; &ndash;&gt; 关闭连接<br>
+长连接指建立socket连接后不管是否使用都保持连接，但安全性较差；</p>
+</li>
+</ol>
+<h1 id="inetaddress-ip地址对象">InetAddress IP地址对象</h1>
+<p>子类 Inet4Address Inet6Address<br>
+无构造方法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">// code
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class IpDemo {
+    public static void main(String[] args) throws UnknownHostException {
+        // 获得本机ip对象
+       InetAddress  ip = InetAddress.getLocalHost();
+        System.out.println(ip.getHostAddress() + &#34;\n&#34; + ip.getHostName());
+
+        // 获得其他主机ip对象
+        ip = InetAddress.getByName(&#34;www.baidu.com&#34;);
+        System.out.println(ip.getHostAddress() + &#34;\n&#34; + ip.getHostName());
+    }
+}
+
+// output
+192.168.2.161
+qing-pc
+183.232.231.174
+www.baidu.com
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="udp-网络编程">UDP 网络编程</h1>
+<p><code>DatagramSocket</code>: 用于发送和接收数据报数据包的套接字<br>
+<code>DatagramPacket</code>: 数据报包</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import java.io.IOException;
+import java.net.*;
+
+public class UDPSend {
+    public static void main(String[] args) throws IOException {
+        /**
+         * 创建UDP传输的发送端
+         * 思路:
+         * 1, 建立UDP的socket服务
+         * 2, 将要发送的数据封装到数据包中
+         * 3, 通过UDP的socket服务将数据包发送出去
+         * 4, 关闭socket服务
+         */
+        DatagramSocket ds = new DatagramSocket();
+        String str = &#34;这是利用UDP传输的信息!!!&#34;;
+        byte[] buf  = str.getBytes();
+        // 构造用于发送长度的分组的数据报包length指定主机上到指定的端口号。 length参数必须小于或等于buf.length 。
+        DatagramPacket dp = new DatagramPacket(buf, buf.length, InetAddress.getLocalHost(), 2333);
+        ds.send(dp);
+        ds.close();
+        System.out.println(&#34;数据发送....&#34;);
+
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UDPreceive {
+    public static void main(String[] args) throws IOException {
+        /**
+         * 建立UDP接收端的思路。
+         * 1，建立udp socket服务,因为是要接收数据，必须要明确一个端口号。
+         * 2，创建数据包，用于存储接收到的数据。方便用数据包对象的方法解析这些数据.
+         * 3，使用socket服务的receive方法将接收的数据存储到数据包中。
+         * 4，通过数据包的方法解析数据包中的数据。
+         * 5，关闭资源
+         */
+        System.out.println(&#34;接收端启动......&#34;);
+        DatagramSocket ds = new DatagramSocket(2333);  // 在2333端口接收数据报
+        byte[] buf = new byte[1024];
+        // 构造一个 DatagramPacket用于接收长度的数据包 length
+        DatagramPacket dp = new DatagramPacket(buf, buf.length);
+        ds.receive(dp); // 阻塞式方法
+        String str = new String(dp.getData(), 0 , dp.getLength()); // getLength() 返回要发送的数据的长度或接收到的数据的长度
+        System.out.println(str);
+
+    }
+}
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="tcp-网络编程">TCP 网络编程</h1>
+<p><code>Socket</code>: 该类实现客户端套接字（也称为“套接字”）。 套接字是两台机器之间通讯的端点。<br>
+<code>ServerSocket</code>: 这个类实现了服务器套接字。 服务器套接字等待通过网络进入的请求。 它根据该请求执行一些操作，然后可能将结果返回给请求者。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import java.io.IOException;
+import java.io.OutputStream;
+import java.net.InetAddress;
+import java.net.Socket;
+
+public class Client {
+    public static void main(String[] args) throws IOException {
+        //客户端发数据到服务端
+        /*
+         * Tcp传输，客户端建立的过程。
+         * 1，创建tcp客户端socket服务。使用的是Socket对象。
+         * 		建议该对象一创建就明确目的地。要连接的主机。
+         * 2，如果连接建立成功，说明数据传输通道已建立。
+         * 		该通道就是socket流 ,是底层建立好的。 既然是流，说明这里既有输入，又有输出。
+         * 		想要输入或者输出流对象，可以找Socket来获取。
+         * 		可以通过getOutputStream(),和getInputStream()来获取两个字节流。
+         * 3，使用输出流，将数据写出。
+         * 4，关闭资源。
+         */
+        Socket s = new Socket(InetAddress.getLocalHost(), 2333);
+
+        OutputStream out = s.getOutputStream();
+
+        out.write(&#34;来自客户端的信息.....&#34;.getBytes());
+
+        s.close();
+    }
+}
+
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">import java.io.IOException;
+import java.io.InputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+    public static void main(String[] args) throws IOException {
+        // 服务端接收客户端发送过来的数据，并打印在控制台上。
+        /*
+         * 建立tcp服务端的思路：
+         * 1，创建服务端socket服务。通过ServerSocket对象。
+         * 2，服务端必须对外提供一个端口，否则客户端无法连接。
+         * 3，获取连接过来的客户端对象。
+         * 4，通过客户端对象获取socket流读取客户端发来的数据
+         * 		并打印在控制台上。
+         * 5，关闭资源。关客户端，关服务端。
+         */
+        ServerSocket ss = new ServerSocket(2333);
+
+        Socket s = ss.accept();  // 阻塞式方法
+
+        InputStream in = s.getInputStream();
+
+        byte[] buf = new byte[1024];
+
+        int len = in.read(buf);
+
+        String str = new String(buf, 0, len);
+
+        System.out.println(s.getLocalAddress().getHostAddress() + &#34;: &#34; + str);
+    }
+}
+
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="java网络编程相关概念">Java网络编程相关概念</h1>
+<p><code>同步和异步</code>：同步和异步是针对应用程序和内核的交互而言的，同步指的是用户进程触发IO 操作并等待或者轮询的去查看IO 操作是否就绪，而异步是指用户进程触发IO 操作以后便开始做自己的事情，而当IO 操作已经完成的时候会得到IO 完成的通知。</p>
+<p>以银行取款为例：</p>
+<p><code>同步</code> ： 自己亲自出马持银行卡到银行取钱（使用同步 IO 时，Java 自己处理IO 读写）；</p>
+<p><code>异步</code> ： 委托一小弟拿银行卡到银行取钱，然后给你（使用异步IO 时，Java 将 IO 读写委托给OS 处理，需要将数据缓冲区地址和大小传给OS(银行卡和密码)，OS 需要支持异步IO操作API）；</p>
+<p><code>阻塞和非阻塞</code>：阻塞和非阻塞是针对于进程在访问数据的时候，根据IO操作的就绪状态来采取的不同方式，说白了是一种读取或者写入操作方法的实现方式，阻塞方式下读取或者写入函数将一直等待，而非阻塞方式下，读取或者写入方法会立即返回一个状态值。</p>
+<p>以银行取款为例：</p>
+<p><code>阻塞</code> ： ATM排队取款，你只能等待（使用阻塞IO时，Java调用会一直阻塞到读写完成才返回）；</p>
+<p><code>非阻塞</code> ： 柜台取款，取个号，然后坐在椅子上做其它事，等号广播会通知你办理，没到号你就不能去，你可以不断问大堂经理排到了没有，大堂经理如果说还没到你就不能去（使用非阻塞IO时，如果不能读写Java调用会马上返回，当IO事件分发器通知可读写时再继续进行读写，不断循环直到读写完成）</p>
+<h2 id="bio-编程">BIO 编程</h2>
+<p>Blocking IO： 同步阻塞的编程方式。</p>
+<p>BIO编程方式通常是在JDK1.4版本之前常用的编程方式。编程实现过程为：首先在服务端启动一个ServerSocket来监听网络请求，客户端启动Socket发起网络请求，默认情况下ServerSocket回建立一个线程来处理此请求，如果服务端没有线程可用，客户端则会阻塞等待或遭到拒绝。</p>
+<p>且建立好的连接，在通讯过程中，是同步的。在并发处理效率上比较低。大致结构如下：</p>
+<p>同步并阻塞，服务器实现模式为一个连接一个线程，即客户端有连接请求时服务器端就需要启动一个线程进行处理，如果这个连接不做任何事情会造成不必要的线程开销，当然可以通过线程池机制改善。</p>
+<p>BIO方式适用于连接数目比较小且固定的架构，这种方式对服务器资源要求比较高，并发局限于应用中，JDK1.4以前的唯一选择，但程序直观简单易理解。</p>
+<p>使用线程池机制改善后的BIO模型图如下:</p>
+<h2 id="nio-编程">NIO 编程</h2>
+<p>Unblocking IO（New IO）： 同步非阻塞的编程方式。</p>
+<p>NIO本身是基于事件驱动思想来完成的，其主要想解决的是BIO的大并发问题，NIO基于Reactor，当socket有流可读或可写入socket时，操作系统会相应的通知引用程序进行处理，应用再将流读取到缓冲区或写入操作系统。也就是说，这个时候，已经不是一个连接就要对应一个处理线程了，而是有效的请求，对应一个线程，当连接没有数据时，是没有工作线程来处理的。</p>
+<p>NIO的最重要的地方是当一个连接创建后，不需要对应一个线程，这个连接会被注册到多路复用器上面，所以所有的连接只需要一个线程就可以搞定，当这个线程中的多路复用器进行轮询的时候，发现连接上有请求的话，才开启一个线程进行处理，也就是一个请求一个线程模式。</p>
+<p>在NIO的处理方式中，当一个请求来的话，开启线程进行处理，可能会等待后端应用的资源(JDBC连接等)，其实这个线程就被阻塞了，当并发上来的话，还是会有BIO一样的问题</p>
+<h2 id="aio编程">AIO编程</h2>
+<p>Asynchronous IO： 异步非阻塞的编程方式。</p>
+<p>与NIO不同，当进行读写操作时，只须直接调用API的read或write方法即可。这两种方法均为异步的，对于读操作而言，当有流可读取时，操作系统会将可读的流传入read方法的缓冲区，并通知应用程序；对于写操作而言，当操作系统将write方法传递的流写入完毕时，操作系统主动通知应用程序。即可以理解为，read/write方法都是异步的，完成后会主动调用回调函数。在JDK1.7中，这部分内容被称作NIO.2，主要在java.nio.channels包下增加了下面四个异步通道：AsynchronousSocketChannel、AsynchronousServerSocketChannel、AsynchronousFileChannel、AsynchronousDatagramChannel</p>
+<h1 id="练习">练习</h1>
+<p>待续&hellip;&hellip;</p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">wangqingzh</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-06-06
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/note/">note</a>
+          <a href="/tags/java/">java</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/sql/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">数据库</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/java_reflect/">
+            <span class="next-text nav-default">Java 反射</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        <div id="comments-gitment"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitment.browser.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitment = new Gitment({
+        id: '2019-08-13 10:24:02 \u002b0800 CST',
+        title: '网络与编程',
+        link: decodeURI(location.href),
+        desc: 'TCP UDP TCP 传输控制协议 UDP 用户数据报协议 TCP面向连接（如打电话先拨号建立连接）；UDP是无连接的，即发送数据之前不需要建立连接； TCP提供可靠的',
+        owner: 'wangqingzh',
+        repo: 'wangqingzh.github.io',
+        oauth: {
+          client_id: 'f0282098d5a445170d61',
+          client_secret: '288ae57025417e200f9c0e56dcbd53060c279881'
+        }
+      });
+      gitment.render('comments-gitment');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:qingwang7962@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/wangqingzh" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wangqingzh</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

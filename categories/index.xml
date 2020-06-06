@@ -110,5 +110,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>tech</title>
+      <link>http://localhost:1313/categories/tech/</link>
+      <pubDate>Fri, 04 Oct 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>http://localhost:1313/categories/database/</link>
+      <pubDate>Thu, 15 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note</title>
+      <link>http://localhost:1313/categories/note/</link>
+      <pubDate>Tue, 13 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/note/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -20,5 +20,14 @@
       <description>笔记是看一个学习视频时的总结 他山之石，可以攻玉。他人之事，我事之师。 奥利给 一、数据类型 1 基本数据类型 Number 数值类型 在JavaScript中无论是</description>
     </item>
     
+    <item>
+      <title>CSS</title>
+      <link>http://localhost:1313/post/css/</link>
+      <pubDate>Thu, 01 Aug 2019 10:24:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/css/</guid>
+      <description>网页布局 标准流 元素\特性 独占一行 设置宽高 排版 块级元素 V V 垂直排版 行内元素 X X 水平排版 行内块级元素 X V 水平排版 浮动流 浮动流是一种&amp;quot;半</description>
+    </item>
+    
   </channel>
 </rss>
