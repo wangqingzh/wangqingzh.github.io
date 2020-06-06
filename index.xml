@@ -146,5 +146,14 @@
       <description>计算机基础 计算机网络（自顶向下方法） 操作系统：精髓与设计原理 深入理解计算机系统 编译原理 软件工程 数据库 MySQL必知必会 高性能MySQL 并发 深</description>
     </item>
     
+    <item>
+      <title>JavaScript 笔记</title>
+      <link>http://localhost:1313/post/js_note/</link>
+      <pubDate>Fri, 06 Dec 2019 17:36:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js_note/</guid>
+      <description>笔记是看一个学习视频时的总结 他山之石，可以攻玉。他人之事，我事之师。 奥利给 一、数据类型 1 基本数据类型 Number 数值类型 在JavaScript中无论是</description>
+    </item>
+    
   </channel>
 </rss>

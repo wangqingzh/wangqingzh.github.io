@@ -107,14 +107,14 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/course/</loc>
+    <loc>http://localhost:1313/categories/concurrent/</loc>
     <lastmod>2020-06-04T02:18:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E5%B9%B6%E5%8F%91/</loc>
+    <loc>http://localhost:1313/tags/course/</loc>
     <lastmod>2020-06-04T02:18:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -291,6 +291,34 @@
   <url>
     <loc>http://localhost:1313/post/my_books/</loc>
     <lastmod>2020-06-02T01:35:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/front_end/</loc>
+    <lastmod>2019-12-06T17:36:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/js_note/</loc>
+    <lastmod>2019-12-06T17:36:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/js/</loc>
+    <lastmod>2019-12-06T17:36:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/note/</loc>
+    <lastmod>2019-12-06T17:36:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

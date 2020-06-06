@@ -48,11 +48,11 @@
     </item>
     
     <item>
-      <title>并发</title>
-      <link>http://localhost:1313/categories/%E5%B9%B6%E5%8F%91/</link>
+      <title>concurrent</title>
+      <link>http://localhost:1313/categories/concurrent/</link>
       <pubDate>Thu, 04 Jun 2020 02:18:38 +0800</pubDate>
       
-      <guid>http://localhost:1313/categories/%E5%B9%B6%E5%8F%91/</guid>
+      <guid>http://localhost:1313/categories/concurrent/</guid>
       <description></description>
     </item>
     
@@ -98,6 +98,15 @@
       <pubDate>Tue, 02 Jun 2020 01:35:09 +0800</pubDate>
       
       <guid>http://localhost:1313/categories/other/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>front_end</title>
+      <link>http://localhost:1313/categories/front_end/</link>
+      <pubDate>Fri, 06 Dec 2019 17:36:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/front_end/</guid>
       <description></description>
     </item>
     
