@@ -16,7 +16,63 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/algo_dynamic_programming/</loc>
+    <loc>http://localhost:1313/tags/algo_array/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/algorithm/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/coding_interviews/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/ci_3_find_repeat_number/</loc>
+    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/algo_dp/</loc>
     <lastmod>2020-06-06T10:24:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -30,14 +86,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/algorithm/</loc>
-    <lastmod>2020-06-06T10:24:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
     <lastmod>2020-06-06T10:24:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,27 +94,6 @@
   
   <url>
     <loc>http://localhost:1313/post/leetcode_5_longest_palindromic_substring/</loc>
-    <lastmod>2020-06-06T10:24:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-06-06T10:24:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2020-06-06T10:24:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2020-06-06T10:24:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -49,11 +49,11 @@
 <meta itemprop="description" content="https://leetcode-cn.com/problems/longest-palindromic-substring/ 最长回文子串 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。 示例 1： 1 2 3 输入: &#34;babad&#34; 输出: &#34;bab&#34; 注意: &#34;aba&#34; 也是一个有效">
 <meta itemprop="datePublished" content="2020-06-06T10:24:02&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-06T10:24:02&#43;08:00" />
-<meta itemprop="wordCount" content="260">
+<meta itemprop="wordCount" content="600">
 
 
 
-<meta itemprop="keywords" content="algo_string,algo_dynamic_programming," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="leetcode,algo_string,algo_dp," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="LeetCode 5：最长回文子串"/>
 <meta name="twitter:description" content="https://leetcode-cn.com/problems/longest-palindromic-substring/ 最长回文子串 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。 示例 1： 1 2 3 输入: &#34;babad&#34; 输出: &#34;bab&#34; 注意: &#34;aba&#34; 也是一个有效"/>
 
@@ -129,8 +129,8 @@
         <div class="post-category">
             <a href="/categories/algorithm/"> algorithm </a>
             </div>
-          <span class="more-meta"> 约 260 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 600 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -190,8 +190,151 @@
 <h2 id="算法思想">算法思想</h2>
 <p>该算法的思维是遍历字符串，在当前字符向两端扩散，如果符合回文字串的定义则记录下回文子串的两端 index，遍历过程中不断比较子串长度，遍历结束即获得最长回文子串。</p>
 <h2 id="代码实现">代码实现</h2>
-<h1 id="动态规划">动态规划</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">String</span> <span class="nf">longestPalindrome</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">){</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">2</span><span class="o">){</span>
+        <span class="k">return</span> <span class="n">s</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">range</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">2</span><span class="o">];</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">cArray</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">();</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cArray</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span> <span class="c1">// 根据回文串定义进行遍历
+</span><span class="c1"></span>        <span class="n">i</span> <span class="o">=</span> <span class="n">findNext</span><span class="o">(</span><span class="n">cArray</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">range</span><span class="o">);</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">range</span><span class="o">[</span><span class="n">0</span><span class="o">],</span> <span class="n">range</span><span class="o">[</span><span class="n">1</span><span class="o">]+</span><span class="n">1</span><span class="o">);</span>
+<span class="o">}</span>
 
+<span class="kd">public</span> <span class="kt">int</span> <span class="nf">findNext</span><span class="o">(</span><span class="kt">char</span><span class="o">[]</span> <span class="n">cArray</span><span class="o">,</span> <span class="kt">int</span> <span class="n">low</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">range</span><span class="o">)</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">high</span> <span class="o">=</span> <span class="n">low</span><span class="o">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">high</span> <span class="o">+</span> <span class="n">1</span> <span class="o">&lt;</span> <span class="n">cArray</span><span class="o">.</span><span class="na">length</span> <span class="o">&amp;&amp;</span> <span class="n">cArray</span><span class="o">[</span><span class="n">low</span><span class="o">]</span> <span class="o">==</span> <span class="n">cArray</span><span class="o">[</span><span class="n">high</span><span class="o">+</span><span class="n">1</span><span class="o">]){</span> <span class="c1">// 根据相同字符 向右合并
+</span><span class="c1"></span>        <span class="n">high</span><span class="o">++;</span>
+    <span class="o">}</span>
+    <span class="kt">int</span> <span class="n">ans</span> <span class="o">=</span> <span class="n">high</span><span class="o">;</span>
+    <span class="k">while</span> <span class="o">(</span><span class="n">low</span> <span class="o">&gt;</span> <span class="n">0</span> <span class="o">&amp;&amp;</span> <span class="n">high</span> <span class="o">+</span> <span class="n">1</span> <span class="o">&lt;</span> <span class="n">cArray</span><span class="o">.</span><span class="na">length</span> <span class="o">&amp;&amp;</span> <span class="n">cArray</span><span class="o">[</span><span class="n">low</span><span class="o">-</span><span class="n">1</span><span class="o">]</span> <span class="o">==</span> <span class="n">cArray</span><span class="o">[</span><span class="n">high</span><span class="o">+</span><span class="n">1</span><span class="o">]){</span>  <span class="c1">// 扩散 
+</span><span class="c1"></span>        <span class="n">low</span><span class="o">--;</span>
+        <span class="n">high</span><span class="o">++;</span>
+    <span class="o">}</span>
+
+    <span class="k">if</span> <span class="o">(</span><span class="n">high</span><span class="o">-</span><span class="n">low</span> <span class="o">&gt;</span> <span class="n">range</span><span class="o">[</span><span class="n">1</span><span class="o">]-</span><span class="n">range</span><span class="o">[</span><span class="n">0</span><span class="o">]){</span>  <span class="c1">// 判断长度
+</span><span class="c1"></span>        <span class="n">range</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">high</span><span class="o">;</span>
+        <span class="n">range</span><span class="o">[</span><span class="n">0</span><span class="o">]</span> <span class="o">=</span> <span class="n">low</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="k">return</span> <span class="n">ans</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="动态规划">动态规划</h1>
+<p><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zhong-xin-kuo-san-dong-tai-gui-hua-by-liweiwei1419/">动态规划题解</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">String</span> <span class="nf">longestPalindrome2</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">){</span>
+    <span class="kt">int</span> <span class="n">len</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">();</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">len</span> <span class="o">&lt;</span> <span class="n">2</span><span class="o">){</span>
+        <span class="k">return</span> <span class="n">s</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">// 初始化
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">maxLen</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+    <span class="kt">int</span> <span class="n">begin</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+    <span class="kt">boolean</span><span class="o">[][]</span> <span class="n">dp</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[</span><span class="n">len</span><span class="o">][</span><span class="n">len</span><span class="o">];</span>  <span class="c1">// 定义状态
+</span><span class="c1"></span>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+        <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kt">char</span><span class="o">[]</span> <span class="n">cArray</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">();</span>
+    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">len</span><span class="o">;</span> <span class="n">j</span><span class="o">++){</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="o">;</span> <span class="n">i</span><span class="o">++){</span>
+            <span class="k">if</span> <span class="o">(</span><span class="n">cArray</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="n">cArray</span><span class="o">[</span><span class="n">j</span><span class="o">]){</span>
+                <span class="k">if</span> <span class="o">(</span><span class="n">j</span> <span class="o">-</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">3</span><span class="o">){</span> <span class="c1">// 0 1 2 子串是最小回文串
+</span><span class="c1"></span>                    <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+                <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                    <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">][</span><span class="n">j</span><span class="o">-</span><span class="n">1</span><span class="o">];</span>  <span class="c1">// 状态转移
+</span><span class="c1"></span>                <span class="o">}</span>
+            <span class="o">}</span><span class="k">else</span> <span class="o">{</span>
+                <span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+            <span class="o">}</span>
+
+            <span class="k">if</span> <span class="o">(</span><span class="n">dp</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="n">j</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="n">1</span> <span class="o">&gt;</span> <span class="n">maxLen</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 判断长度
+</span><span class="c1"></span>                <span class="n">begin</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+                <span class="n">maxLen</span> <span class="o">=</span> <span class="n">j</span><span class="o">-</span><span class="n">i</span><span class="o">+</span><span class="n">1</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="n">begin</span><span class="o">,</span> <span class="n">begin</span><span class="o">+</span><span class="n">maxLen</span><span class="o">);</span>
+
+
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
@@ -211,13 +354,14 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
+          <a href="/tags/leetcode/">leetcode</a>
           <a href="/tags/algo_string/">algo_string</a>
-          <a href="/tags/algo_dynamic_programming/">algo_dynamic_programming</a>
+          <a href="/tags/algo_dp/">algo_dp</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/cook_rambling/">
+        <a class="prev" href="/post/ci_3_find_repeat_number/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">做菜漫谈</span>
+            <span class="prev-text nav-default">剑指Offer 3：数组中重复的数字</span>
             <span class="prev-text nav-mobile">上一篇</span>
           </a>
         <a class="next" href="/post/food_blogger/">
