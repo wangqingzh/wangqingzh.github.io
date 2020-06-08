@@ -30,21 +30,21 @@
     </item>
     
     <item>
-      <title>剑指Offer 3：数组中重复的数字</title>
-      <link>http://localhost:1313/post/ci_3_find_repeat_number/</link>
+      <title>剑指Offer 刷题</title>
+      <link>http://localhost:1313/post/coding_interviews/</link>
       <pubDate>Mon, 08 Jun 2020 02:04:02 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/ci_3_find_repeat_number/</guid>
-      <description>题目一 题目描述 在一个长度为 n 的数组里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复</description>
+      <guid>http://localhost:1313/post/coding_interviews/</guid>
+      <description>面试题3： 数组中重复的数字 数组 简单 查找 题目描述 在一个长度为 n 的数组里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个</description>
     </item>
     
     <item>
-      <title>LeetCode 5：最长回文子串</title>
-      <link>http://localhost:1313/post/leetcode_5_longest_palindromic_substring/</link>
+      <title>LeetCode 动态规划</title>
+      <link>http://localhost:1313/post/leetcode_dp/</link>
       <pubDate>Sat, 06 Jun 2020 10:24:02 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/leetcode_5_longest_palindromic_substring/</guid>
-      <description>https://leetcode-cn.com/problems/longest-palindromic-substring/ 最长回文子串 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。 示例 1： 1 2 3 输入: &amp;#34;babad&amp;#34; 输出: &amp;#34;bab&amp;#34; 注意: &amp;#34;aba&amp;#34; 也是一个有效</description>
+      <guid>http://localhost:1313/post/leetcode_dp/</guid>
+      <description>5 最长回文子串 字符串 https://leetcode-cn.com/problems/longest-palindromic-substring/ 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。 示例 1： 1 2 3 输入: &amp;#34;babad&amp;#34; 输出: &amp;#34;bab&amp;#34; 注意: &amp;#34;aba&amp;#34; 也是</description>
     </item>
     
     <item>
