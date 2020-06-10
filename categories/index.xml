@@ -6,10 +6,28 @@
     <description>Recent content in Categories on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Jun 2020 16:46:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 17:57:27 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>design_pattern</title>
+      <link>http://localhost:1313/categories/design_pattern/</link>
+      <pubDate>Tue, 09 Jun 2020 17:57:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/design_pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>source_code</title>
+      <link>http://localhost:1313/categories/source_code/</link>
+      <pubDate>Tue, 09 Jun 2020 17:55:33 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/source_code/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data_structure</title>

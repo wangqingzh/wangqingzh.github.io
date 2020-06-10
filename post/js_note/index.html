@@ -49,7 +49,7 @@
 <meta itemprop="description" content="笔记是看一个学习视频时的总结 他山之石，可以攻玉。他人之事，我事之师。 奥利给 一、数据类型 1 基本数据类型 Number 数值类型 在JavaScript中无论是">
 <meta itemprop="datePublished" content="2019-12-06T17:36:02&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-06T17:36:02&#43;08:00" />
-<meta itemprop="wordCount" content="16822">
+<meta itemprop="wordCount" content="16847">
 
 
 
@@ -129,7 +129,7 @@
         <div class="post-category">
             <a href="/categories/front_end/"> front_end </a>
             </div>
-          <span class="more-meta"> 约 16822 字 </span>
+          <span class="more-meta"> 约 16847 字 </span>
           <span class="more-meta"> 预计阅读 34 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -2592,33 +2592,98 @@
 </div></li>
 </ol>
 <h2 id="2-方法和函数区别">2 方法和函数区别</h2>
-<p>1.什么是函数?</p>
+<ol>
+<li>
+<p>什么是函数?</p>
 <p>函数就是没有和其它的类显示的绑定在一起的, 我们就称之为函数</p>
-<p>2.什么是方法?</p>
+</li>
+<li>
+<p>什么是方法?</p>
 <p>方法就是显示的和其它的类绑定在一起的, 我们就称之为方法</p>
-<p>3.函数和方法的区别</p>
+</li>
+<li>
+<p>函数和方法的区别</p>
 <p>3.1函数可以直接调用, 但是方法不能直接调用, 只能通过对象来调用</p>
 <p>3.2函数内部的this输出的是window, 方法内部的this输出的是当前调用的那个对象</p>
-<p>4.无论是函数还是方法, 内部都有一个叫做this的东东</p>
+</li>
+<li>
+<p>无论是函数还是方法, 内部都有一个叫做this的东东</p>
 <p>this是什么? 谁调用了当前的函数或者方法, 那么当前的this就是谁</p>
-<p>//函数</p>
-<p>function demo() {</p>
-<p>// console.log(&quot;hello demo&quot;);</p>
-<p>console.log(this);</p>
-<p>}</p>
-<p>// demo();</p>
-<p>window.demo();</p>
-<p>//方法</p>
-<p>let obj = {</p>
-<p>name: &quot;lnj&quot;,</p>
-<p>test: function () {</p>
-<p>// console.log(&quot;hello test&quot;);</p>
-<p>console.log(this);</p>
-<p>}</p>
-<p>}</p>
-<p>// test();</p>
-<p>obj.test();</p>
-<h2 id="3-工厂函数">3 工厂函数</h2>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">//函数
+</span><span class="c1"></span>
+<span class="kd">function</span> <span class="nx">demo</span><span class="p">()</span> <span class="p">{</span>
+
+<span class="c1">// console.log(&#34;hello demo&#34;);
+</span><span class="c1"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="c1">// demo();
+</span><span class="c1"></span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">demo</span><span class="p">();</span>
+
+<span class="c1">//方法
+</span><span class="c1"></span>
+<span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span>
+
+<span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;lnj&#34;</span><span class="p">,</span>
+
+<span class="nx">test</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+
+<span class="c1">// console.log(&#34;hello test&#34;);
+</span><span class="c1"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+
+<span class="p">}</span>
+
+<span class="p">}</span>
+
+<span class="c1">// test();
+</span><span class="c1"></span>
+<span class="nx">obj</span><span class="p">.</span><span class="nx">test</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="3-工厂函数">3 工厂函数</h2>
 <p><strong>什么是工厂函数?</strong></p>
 <p>​	工厂函数就是专门用于创建对象的函数, 我们就称之为工厂函数</p>
 <div class="highlight"><div class="chroma">

@@ -6,7 +6,7 @@
     <description>Recent content on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Jun 2020 16:46:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 17:57:27 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,6 +27,24 @@
       
       <guid>http://localhost:1313/about/</guid>
       <description>博客是使用hugo生成的静态网页，并部署在Github Pages上 博客主要用来记录与分享学习、生活 博主 95后 爱好做饭、编码 祝每一位访客朋友健</description>
+    </item>
+    
+    <item>
+      <title>设计模式</title>
+      <link>http://localhost:1313/post/design_pattern/</link>
+      <pubDate>Tue, 09 Jun 2020 17:57:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/design_pattern/</guid>
+      <description>占位 等待输出</description>
+    </item>
+    
+    <item>
+      <title>源码分析</title>
+      <link>http://localhost:1313/post/source_code/</link>
+      <pubDate>Tue, 09 Jun 2020 17:55:33 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/source_code/</guid>
+      <description>占位 等待输出</description>
     </item>
     
     <item>

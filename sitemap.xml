@@ -17,27 +17,55 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2020-06-08T16:46:23+08:00</lastmod>
+    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/data_structure/</loc>
-    <lastmod>2020-06-08T16:46:23+08:00</lastmod>
+    <loc>http://localhost:1313/categories/design_pattern/</loc>
+    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-06-08T16:46:23+08:00</lastmod>
+    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/design_pattern/</loc>
+    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/source_code/</loc>
+    <lastmod>2020-06-09T17:55:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/source_code/</loc>
+    <lastmod>2020-06-09T17:55:33+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/data_structure/</loc>
     <lastmod>2020-06-08T16:46:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
