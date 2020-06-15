@@ -17,7 +17,7 @@
       <pubDate>Tue, 09 Jun 2020 17:57:27 +0800</pubDate>
       
       <guid>http://localhost:1313/post/design_pattern/</guid>
-      <description>占位 等待输出</description>
+      <description>Iterator 迭代器模式最常见的就是集合的遍历啦，查看集合中几个类的源码，就能接触到迭代器模式的设计思想。 Collection 接口 1 2 3 4 5 public interface Collection&amp;lt;E&amp;gt; extends Iterable&amp;lt;E&amp;gt; { ... Iterator&amp;lt;E&amp;gt; iterator(); ... } Iterator 接口 1</description>
     </item>
     
   </channel>

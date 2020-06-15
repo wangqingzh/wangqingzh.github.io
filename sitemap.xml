@@ -17,27 +17,139 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/design_pattern/</loc>
-    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
+    <loc>http://localhost:1313/tags/functional_programming/</loc>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/java/</loc>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-06-09T17:57:27+08:00</lastmod>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/functional_programming/</loc>
+    <lastmod>2020-06-15T15:57:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/tips/</loc>
+    <lastmod>2020-06-15T10:40:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/uml/</loc>
+    <lastmod>2020-06-15T10:40:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/uml/</loc>
+    <lastmod>2020-06-15T10:40:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/collection/</loc>
+    <lastmod>2020-06-13T22:05:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/java_collection/</loc>
+    <lastmod>2020-06-13T22:05:30+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/algo_backtrack/</loc>
+    <lastmod>2020-06-13T16:48:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/algorithm/</loc>
+    <lastmod>2020-06-13T16:48:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/leetcode/</loc>
+    <lastmod>2020-06-13T16:48:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/leetcode_backtrack/</loc>
+    <lastmod>2020-06-13T16:48:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/initializes_assignment/</loc>
+    <lastmod>2020-06-13T15:46:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/algo_greedy/</loc>
+    <lastmod>2020-06-10T13:02:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/leetcode_greedy/</loc>
+    <lastmod>2020-06-10T13:02:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/design_pattern/</loc>
     <lastmod>2020-06-09T17:57:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -79,21 +191,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/algorithm/</loc>
-    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/tags/coding_interviews/</loc>
-    <lastmod>2020-06-08T02:04:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2020-06-08T02:04:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -108,13 +206,6 @@
   
   <url>
     <loc>http://localhost:1313/tags/algo_dp/</loc>
-    <lastmod>2020-06-06T10:24:02+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/leetcode/</loc>
     <lastmod>2020-06-06T10:24:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -193,13 +284,6 @@
   <url>
     <loc>http://localhost:1313/post/chinese_copywriting_guidelines/</loc>
     <lastmod>2020-06-04T02:09:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/java/</loc>
-    <lastmod>2020-06-06T10:24:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

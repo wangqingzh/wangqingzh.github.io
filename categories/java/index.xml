@@ -6,10 +6,37 @@
     <description>Recent content in java on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Jun 2020 01:25:01 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 15:57:29 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>函数式编程</title>
+      <link>http://localhost:1313/post/functional_programming/</link>
+      <pubDate>Mon, 15 Jun 2020 15:57:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/functional_programming/</guid>
+      <description>参考资料 Java 8 函数式编程 阅读中。。。</description>
+    </item>
+    
+    <item>
+      <title>Java 集合</title>
+      <link>http://localhost:1313/post/java_collection/</link>
+      <pubDate>Sat, 13 Jun 2020 22:05:30 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/java_collection/</guid>
+      <description>结构图 整体图： 简化图： 遍历 初始化： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 public class Main { static List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;&amp;gt;() { { add(&amp;#34;l&amp;#34;); add(&amp;#34;i&amp;#34;); add(&amp;#34;s&amp;#34;); add(&amp;#34;t&amp;#34;); } }; static Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;() {</description>
+    </item>
+    
+    <item>
+      <title>集合赋值的另类写法</title>
+      <link>http://localhost:1313/post/initializes_assignment/</link>
+      <pubDate>Sat, 13 Jun 2020 15:46:06 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/initializes_assignment/</guid>
+      <description>第一次见到的写法 1 2 3 4 5 6 Map&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;&amp;gt;(){{ put(&amp;#34;a&amp;#34;, &amp;#34;b&amp;#34;); put(&amp;#34;c&amp;#34;, &amp;#34;d&amp;#34;); put(&amp;#34;e&amp;#34;, &amp;#34;g&amp;#34;); put(&amp;#34;f&amp;#34;, &amp;#34;h&amp;#34;); }}; 第一次见到这种写法还是有点蒙圈的，一时没反应过来，还以为是 Java 又搞出来了什么新的语法</description>
+    </item>
     
     <item>
       <title>String StringBuffer StringBuilder</title>

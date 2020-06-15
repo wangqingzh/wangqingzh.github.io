@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algo_backtrack on wangqingzh</title>
+    <link>http://localhost:1313/tags/algo_backtrack/</link>
+    <description>Recent content in algo_backtrack on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Jun 2020 16:48:52 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/algo_backtrack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LeetCode 回溯算法</title>
+      <link>http://localhost:1313/post/leetcode_backtrack/</link>
+      <pubDate>Sat, 13 Jun 2020 16:48:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/leetcode_backtrack/</guid>
+      <description>参考资料 https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/hui-su-suan-fa-xiang-jie-xiu-ding-ban</description>
+    </item>
+    
+  </channel>
+</rss>

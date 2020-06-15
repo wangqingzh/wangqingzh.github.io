@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>functional_programming on wangqingzh</title>
+    <link>http://localhost:1313/tags/functional_programming/</link>
+    <description>Recent content in functional_programming on wangqingzh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Jun 2020 15:57:29 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/functional_programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>函数式编程</title>
+      <link>http://localhost:1313/post/functional_programming/</link>
+      <pubDate>Mon, 15 Jun 2020 15:57:29 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/functional_programming/</guid>
+      <description>参考资料 Java 8 函数式编程 阅读中。。。</description>
+    </item>
+    
+  </channel>
+</rss>
