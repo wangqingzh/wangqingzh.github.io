@@ -17,7 +17,7 @@
       <pubDate>Tue, 09 Jun 2020 17:57:27 +0800</pubDate>
       
       <guid>http://localhost:1313/post/design_pattern/</guid>
-      <description>Iterator 迭代器模式最常见的就是集合的遍历啦，查看集合中几个类的源码，就能接触到迭代器模式的设计思想。 Collection 接口 1 2 3 4 5 public interface Collection&amp;lt;E&amp;gt; extends Iterable&amp;lt;E&amp;gt; { ... Iterator&amp;lt;E&amp;gt; iterator(); ... } Iterator 接口 1</description>
+      <description>Singleton 双重检查模式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 package singleton; /** * @author qing */ public class Singleton { /** * 创建对象 非原子操作（三步） volatile 防止重排序 */ private static volatile Singleton</description>
     </item>
     
   </channel>
