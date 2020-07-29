@@ -6,10 +6,28 @@
     <description>Recent content in Categories on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 17 Jun 2020 17:06:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 00:11:16 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>favorite</title>
+      <link>http://localhost:1313/categories/favorite/</link>
+      <pubDate>Thu, 30 Jul 2020 00:11:16 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/favorite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>http://localhost:1313/categories/java/</link>
+      <pubDate>Thu, 16 Jul 2020 21:51:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/java/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>spring</title>
@@ -26,15 +44,6 @@
       <pubDate>Tue, 16 Jun 2020 14:54:25 +0800</pubDate>
       
       <guid>http://localhost:1313/categories/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>http://localhost:1313/categories/java/</link>
-      <pubDate>Mon, 15 Jun 2020 15:57:29 +0800</pubDate>
-      
-      <guid>http://localhost:1313/categories/java/</guid>
       <description></description>
     </item>
     
