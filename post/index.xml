@@ -134,7 +134,7 @@
       <pubDate>Tue, 09 Jun 2020 17:57:27 +0800</pubDate>
       
       <guid>http://localhost:1313/post/design_pattern/</guid>
-      <description>创建型 Singleton 双重检查模式 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 package singleton; /** * @author qing */ public class Singleton { /** * 创建对象 非原子操作（三步） volatile 防止重排序 */ private</description>
+      <description>六大原则 开闭原则（OpenClosePrinciple） 开闭原则就是说对扩展开放，对修改关闭。在程序需要进行拓展的时候，不能去修改原有的代码</description>
     </item>
     
     <item>
