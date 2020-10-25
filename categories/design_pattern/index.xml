@@ -6,11 +6,7 @@
     <description>Recent content in design_pattern on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2020 17:57:27 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/categories/design_pattern/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 09 Jun 2020 17:57:27 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/design_pattern/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>设计模式</title>
       <link>http://localhost:1313/post/design_pattern/</link>

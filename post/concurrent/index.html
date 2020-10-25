@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.72.0 with theme even" />
+<meta name="generator" content="Hugo 0.76.5 with theme even" />
 
 
 <link rel="canonical" href="http://localhost:1313/post/concurrent/" />
@@ -47,13 +47,14 @@
 <meta property="article:modified_time" content="2020-06-04T02:18:38+08:00" />
 <meta itemprop="name" content="深入浅出Java多线程">
 <meta itemprop="description" content="本篇文章系引用，原项目 concurrent [TOC] 第一篇：基础篇 第一章 进程与线程的基本概念 1.1 进程产生的背景 最初的计算机只能接受一些特定的指令，用户每输入一个指令，计">
-<meta itemprop="datePublished" content="2020-06-04T02:18:38&#43;08:00" />
-<meta itemprop="dateModified" content="2020-06-04T02:18:38&#43;08:00" />
-<meta itemprop="wordCount" content="86224">
+<meta itemprop="datePublished" content="2020-06-04T02:18:38+08:00" />
+<meta itemprop="dateModified" content="2020-06-04T02:18:38+08:00" />
+<meta itemprop="wordCount" content="86222">
 
 
 
-<meta itemprop="keywords" content="course," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="course," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="深入浅出Java多线程"/>
 <meta name="twitter:description" content="本篇文章系引用，原项目 concurrent [TOC] 第一篇：基础篇 第一章 进程与线程的基本概念 1.1 进程产生的背景 最初的计算机只能接受一些特定的指令，用户每输入一个指令，计"/>
 
@@ -129,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/concurrent/"> concurrent </a>
             </div>
-          <span class="more-meta"> 约 86224 字 </span>
+          <span class="more-meta"> 约 86222 字 </span>
           <span class="more-meta"> 预计阅读 173 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -4889,34 +4890,34 @@ DAYS ： 天</p>
 <table>
 <thead>
 <tr>
-<th align="center">方法\处理方式</th>
-<th align="center">抛出异常</th>
-<th align="center">返回特殊值</th>
-<th align="center">一直阻塞</th>
-<th align="center">超时退出</th>
+<th style="text-align:center">方法\处理方式</th>
+<th style="text-align:center">抛出异常</th>
+<th style="text-align:center">返回特殊值</th>
+<th style="text-align:center">一直阻塞</th>
+<th style="text-align:center">超时退出</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">插入方法</td>
-<td align="center">add(e)</td>
-<td align="center">offer(e)</td>
-<td align="center"><strong>put(e)</strong></td>
-<td align="center">offer(e,time,unit)</td>
+<td style="text-align:center">插入方法</td>
+<td style="text-align:center">add(e)</td>
+<td style="text-align:center">offer(e)</td>
+<td style="text-align:center"><strong>put(e)</strong></td>
+<td style="text-align:center">offer(e,time,unit)</td>
 </tr>
 <tr>
-<td align="center">移除方法</td>
-<td align="center">remove()</td>
-<td align="center">poll()</td>
-<td align="center"><strong>take()</strong></td>
-<td align="center">poll(time,unit)</td>
+<td style="text-align:center">移除方法</td>
+<td style="text-align:center">remove()</td>
+<td style="text-align:center">poll()</td>
+<td style="text-align:center"><strong>take()</strong></td>
+<td style="text-align:center">poll(time,unit)</td>
 </tr>
 <tr>
-<td align="center">检查方法</td>
-<td align="center">element()</td>
-<td align="center">peek()</td>
-<td align="center">-</td>
-<td align="center">-</td>
+<td style="text-align:center">检查方法</td>
+<td style="text-align:center">element()</td>
+<td style="text-align:center">peek()</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
 </tr>
 </tbody>
 </table>
@@ -5985,10 +5986,10 @@ DelayQueue是一个没有大小限制的队列，因此往队列中插入数据�
 <p>在说到CopyOnWrite容器之前我们先来谈谈什么是CopyOnWrite机制，CopyOnWrite是计算机设计领域中的一种优化策略，也是一种在并发场景下常用的设计思想——写入时复制思想。</p>
 <p>那什么是写入时复制思想呢？就是当有多个调用者同时去请求一个资源数据的时候，有一个调用者出于某些原因需要对当前的数据源进行修改，这个时候系统将会复制一个当前数据源的副本给调用者修改。</p>
 <p>CopyOnWrite容器即<strong>写时复制的容器</strong>,当我们往一个容器中添加元素的时候，不直接往容器中添加，而是将当前容器进行copy，复制出来一个新的容器，然后向新容器中添加我们需要的元素，最后将原容器的引用指向新容器。</p>
-<p>这样做的好处在于，我们可以在并发的场景下对容器进行&quot;读操作&quot;而不需要&quot;加锁&rdquo;，从而达到读写分离的目的。从JDK 1.5 开始Java并发包里提供了两个使用CopyOnWrite机制实现的并发容器 ，分别是CopyOnWriteArrayList和CopyOnWriteArraySet 。我们着重给大家介绍一下CopyOnWriteArrayList。</p>
+<p>这样做的好处在于，我们可以在并发的场景下对容器进行&quot;读操作&quot;而不需要&quot;加锁&quot;，从而达到读写分离的目的。从JDK 1.5 开始Java并发包里提供了两个使用CopyOnWrite机制实现的并发容器 ，分别是CopyOnWriteArrayList和CopyOnWriteArraySet 。我们着重给大家介绍一下CopyOnWriteArrayList。</p>
 <h2 id="162-copyonwritearraylist">16.2 CopyOnWriteArrayList</h2>
 <p><strong>优点</strong>：
-CopyOnWriteArrayList经常被用于“读多写少”的并发场景，是因为CopyOnWriteArrayList无需任何同步措施，大大增强了读的性能。在Java中遍历线程非安全的List(如：ArrayList和 LinkedList)的时候，若中途有别的线程对List容器进行修改，那么会抛出ConcurrentModificationException异常。CopyOnWriteArrayList由于其&quot;读写分离&rdquo;，遍历和修改操作分别作用在不同的List容器，所以在使用迭代器遍历的时候，则不会抛出异常。</p>
+CopyOnWriteArrayList经常被用于“读多写少”的并发场景，是因为CopyOnWriteArrayList无需任何同步措施，大大增强了读的性能。在Java中遍历线程非安全的List(如：ArrayList和 LinkedList)的时候，若中途有别的线程对List容器进行修改，那么会抛出ConcurrentModificationException异常。CopyOnWriteArrayList由于其&quot;读写分离&quot;，遍历和修改操作分别作用在不同的List容器，所以在使用迭代器遍历的时候，则不会抛出异常。</p>
 <p><strong>缺点</strong>：
 第一个缺点是CopyOnWriteArrayList每次执行写操作都会将原容器进行拷贝了一份，数据量大的时候，内存会存在较大的压力，可能会引起频繁Full GC（ZGC因为没有使用Full GC）。比如这些对象占用的内存比较大200M左右，那么再写入100M数据进去，内存就会多占用300M。</p>
 <p>第二个缺点是CopyOnWriteArrayList由于实现的原因，写和读分别作用在不同新老容器上，在写操作执行过程中，读不会阻塞，但读取到的却是老容器的数据。</p>

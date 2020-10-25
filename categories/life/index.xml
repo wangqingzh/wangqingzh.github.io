@@ -6,18 +6,14 @@
     <description>Recent content in life on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2020 02:12:25 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Jun 2020 02:12:25 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>建设计划</title>
       <link>http://localhost:1313/post/build_plan/</link>
       <pubDate>Tue, 02 Jun 2020 02:12:25 +0800</pubDate>
       
       <guid>http://localhost:1313/post/build_plan/</guid>
-      <description>路由器 新路由3（NEWIFI-D2）：已有 联发科 mt7621 2c4t 880Mhz 系统 OpenWrt Server &amp;amp; NAS i5 8500 (已有) + 4T 硬盘（紫盘） 小机箱 5.5L：已有 显示器 4k LG 27UL600 显示器支架 主机</description>
+      <description>路由器 新路由3（NEWIFI-D2）：已有 联发科 mt7621 2c4t 880Mhz 系统 OpenWrt Server &amp;amp; NAS i5 8500 (已有) + 3T东芝机械 小机箱 5.5L 黑群晖 虚机装的 arch 做server 显示器 Dell u2720qm</description>
     </item>
     
   </channel>

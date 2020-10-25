@@ -6,11 +6,7 @@
     <description>Recent content in tomcat on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Aug 2019 10:24:02 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Aug 2019 10:24:02 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/tomcat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tomcat</title>
       <link>http://localhost:1313/post/tomcat/</link>

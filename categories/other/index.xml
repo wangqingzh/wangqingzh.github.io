@@ -6,11 +6,7 @@
     <description>Recent content in other on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2020 01:35:09 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/categories/other/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 02 Jun 2020 01:35:09 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/other/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>我的书单</title>
       <link>http://localhost:1313/post/my_books/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in jvm on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Aug 2019 10:24:02 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 20 Aug 2019 10:24:02 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/jvm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java 虚拟机</title>
       <link>http://localhost:1313/post/jvm/</link>

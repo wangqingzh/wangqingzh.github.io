@@ -6,11 +6,7 @@
     <description>Recent content in source_code on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Jun 2020 17:55:33 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/categories/source_code/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 09 Jun 2020 17:55:33 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/source_code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>源码分析</title>
       <link>http://localhost:1313/post/source_code/</link>

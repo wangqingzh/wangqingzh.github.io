@@ -6,11 +6,7 @@
     <description>Recent content in front_end on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 06 Dec 2019 17:36:02 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/categories/front_end/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 06 Dec 2019 17:36:02 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/front_end/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript 笔记</title>
       <link>http://localhost:1313/post/js_note/</link>

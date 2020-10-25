@@ -23,7 +23,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.72.0 with theme even" />
+<meta name="generator" content="Hugo 0.76.5 with theme even" />
 
 
 <link rel="canonical" href="http://localhost:1313/post/subscribe_analysis/" />
@@ -47,13 +47,14 @@
 <meta property="article:modified_time" content="2020-06-06T10:24:02+08:00" />
 <meta itemprop="name" content="SSR 订阅解析">
 <meta itemprop="description" content="前言 偶然的机会得知SSR订阅的内容是Base64加密过的, 于是了解了下Base64, 萌生了用java把SSR订阅解析成JSON数据想法. Base64 https://zh.wikipedia.org/zh-hans/Base64">
-<meta itemprop="datePublished" content="2019-10-04T10:24:02&#43;08:00" />
-<meta itemprop="dateModified" content="2020-06-06T10:24:02&#43;08:00" />
-<meta itemprop="wordCount" content="437">
+<meta itemprop="datePublished" content="2019-10-04T10:24:02+08:00" />
+<meta itemprop="dateModified" content="2020-06-06T10:24:02+08:00" />
+<meta itemprop="wordCount" content="438">
 
 
 
-<meta itemprop="keywords" content="ssr," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ssr," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SSR 订阅解析"/>
 <meta name="twitter:description" content="前言 偶然的机会得知SSR订阅的内容是Base64加密过的, 于是了解了下Base64, 萌生了用java把SSR订阅解析成JSON数据想法. Base64 https://zh.wikipedia.org/zh-hans/Base64"/>
 
@@ -129,7 +130,7 @@
         <div class="post-category">
             <a href="/categories/tech/"> tech </a>
             </div>
-          <span class="more-meta"> 约 437 字 </span>
+          <span class="more-meta"> 约 438 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -153,7 +154,7 @@
 <p>偶然的机会得知SSR订阅的内容是Base64加密过的, 于是了解了下Base64, 萌生了用java把SSR订阅解析成JSON数据想法.</p>
 <h1 id="base64">Base64</h1>
 <p><a href="https://zh.wikipedia.org/zh-hans/Base64">https://zh.wikipedia.org/zh-hans/Base64</a><br>
-简单概括一下: Base64将数据按照一定的规则重新编码, 但是由于网络传输, 在编码中将&quot;+&quot;和&rdquo;/&ldquo;进行了替换, 所以在解码的时候要将这两个字符还原回去. 以上这个概括是符合SSR订阅的, 细节方面请看上面维基百科对Base64的解释.</p>
+简单概括一下: Base64将数据按照一定的规则重新编码, 但是由于网络传输, 在编码中将&quot;+&ldquo;和&rdquo;/&ldquo;进行了替换, 所以在解码的时候要将这两个字符还原回去. 以上这个概括是符合SSR订阅的, 细节方面请看上面维基百科对Base64的解释.</p>
 <h1 id="思路">思路</h1>
 <p>关于Base64的解码工具, JDK中有提供现成的java.util.Base64.<br>
 关于数据还原, 从SSR订阅获得的字符串不是一次解码就可以直接使用的, 第一解码后是一个个ssr://链接, 然后对ssr://后的字符再进行解码, 这时已经出现明文, 但是密码等数据还是加密状态, 要第三次解码. 在三次解码中, 每次都要对字符串中的&rdquo;-&ldquo;和&rdquo;_&ldquo;进行替换.</p>

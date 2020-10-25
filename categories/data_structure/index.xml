@@ -6,11 +6,7 @@
     <description>Recent content in data_structure on wangqingzh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Jun 2020 16:46:23 +0800</lastBuildDate>
-    
-	<atom:link href="http://localhost:1313/categories/data_structure/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 08 Jun 2020 16:46:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/data_structure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>数据结构：二叉树</title>
       <link>http://localhost:1313/post/ds_binary_tree/</link>
